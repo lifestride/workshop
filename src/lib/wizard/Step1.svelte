@@ -1,4 +1,6 @@
 <script>
+    import RichTextEditor from "$lib/components/RichTextEditor.svelte";
+
     export let nextStep;
 </script>
 
@@ -19,6 +21,7 @@
         <h3>Activity</h3>
         <p>Reflect on what you are spending most of your time right now.</p>
         <form>
+            <RichTextEditor />
             <button type="button" on:click={nextStep}>Next</button>
         </form>
     </section>
