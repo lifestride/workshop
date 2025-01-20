@@ -9,3 +9,7 @@ body {
 body > main {
     @apply w-3/4 max-w-5xl p-6 bg-white shadow-lg rounded-lg;
 }
+
+main > form > progress {
+    @apply w-full my-1 rounded;
+}

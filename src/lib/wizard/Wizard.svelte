@@ -1,6 +1,7 @@
 <script lang="ts">
-    import StepOne from "./Step1.svelte";
-    import StepTwo from "./Step2.svelte";
+    import Progress from "./Progress.svelte";
+    import StepOne  from "./Step1.svelte";
+    import StepTwo  from "./Step2.svelte";
 
     const steps = [
         StepOne,
@@ -36,6 +37,7 @@
 </script>
 
 <form>
+    <Progress {steps} {currentStep} />
     <svelte:component this={steps[currentStep - 1]} />
 
     {#if !isAtFirstStep()}
