@@ -4,12 +4,14 @@
     import SelectAreasStep    from "./steps/areas-select.svelte";
     import SelfAssessmentStep from "./steps/self-assessment.svelte";
     import VisionStep         from "./steps/vision.svelte";
+    import CreateVisionStep   from "./steps/vision-create.svelte";
 
     const steps = [
         AreasStep,
         SelectAreasStep,
         SelfAssessmentStep,
         VisionStep,
+        CreateVisionStep,
     ];
 
     let currentStep = $state(1);

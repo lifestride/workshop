@@ -16,6 +16,17 @@ export const areas = [
             "I prioritize preventative healthcare and consistently make choices that nurture my body.",
             "I wake up each day feeling well-rested, ready to take on challenges with enthusiasm.",
         ],
+        prompt_questions: [
+            "How do you see yourself being at your optimal health and vitality?",
+            "What habits could you adopt to enhance your physical well-being?",
+            "What motivates you to prioritize your health?",
+            "How can you improve your nutrition?",
+            "What activities make you feel energized and alive?",
+            "What physical goals (e.g., running a marathon, hiking a mountain) excite you the most?",
+            "If you could change one thing about your health or lifestyle, what would it be?",
+            "How would you feel waking up every morning with vibrant energy and strength?",
+            "What new activity or sport would you love to try to challenge your body?",
+        ],
     },
     {
         name: "Emotional Well-Being",
@@ -33,6 +44,13 @@ export const areas = [
             "I build resilience, bouncing back quickly from setbacks with a positive attitude.",
             "I embrace vulnerability and authenticity, fostering deeper connections with others.",
             "I invest in mental wellness practices, feeling balanced and optimistic.",
+        ],
+        prompt_questions: [
+            "How would your life change if you experienced daily peace of mind and emotional resilience?",
+            "What practices or habits would make you feel consistently balanced and centered?",
+            "What could you achieve if stress or fear no longer held you back?",
+            "How would you describe your ideal emotional state in a difficult situation?",
+            "What does a day filled with joy, gratitude, and calmness look like to you?",
         ],
     },
     {
@@ -52,6 +70,13 @@ export const areas = [
             "I leave a lasting legacy, positively impacting the lives of those around me.",
             "I live with gratitude, appreciating life’s blessings and challenges",
         ],
+        prompt_questions: [
+            "What would a deeply fulfilling and spiritually connected life look like for you?",
+            "How can you align your daily actions more closely with your core values and beliefs?",
+            "If you could make one contribution to the world, what would it be?",
+            "What brings you the most peace, and how can you experience more of it?",
+            "What would your life look like if you fully lived in alignment with your purpose?",
+        ],
     },
     {
         name: "Relationships and Social Connection",
@@ -69,6 +94,13 @@ export const areas = [
             "I am surrounded by a supportive and inspiring circle of friends.",
             "I build strong professional networks, connecting with like-minded individuals who uplift and challenge me.",
             "I deepen my relationships by listening, communicating, and showing appreciation daily.",
+        ],
+        prompt_questions: [
+            "What would your ideal relationship with your partner, family, or friends look like?",
+            "How would you like to show up for the people you care about the most?",
+            "What kind of connections or relationships would make you feel truly fulfilled?",
+            "Imagine hosting a gathering with your closest loved ones—what would it look and feel like?",
+            "How can you bring more love, fun, and authenticity into your relationships?",
         ],
     },
     {
@@ -89,6 +121,13 @@ export const areas = [
             "I support my children’s education and growth, encouraging their unique talents.",
             "I foster emotional intelligence in my children, helping them navigate challenges.",
         ],
+        prompt_questions: [
+            "What traditions or rituals would you like to create with your family?",
+            "How would you like to strengthen your bond with each family member?",
+            "How can you create a family environment that fosters love and growth?",
+            "What does a perfect day look like for your family?",
+            "How can you support your partner and children in achieving their dreams?",
+        ],
     },
     {
         name: "Personal Growth and Education",
@@ -106,6 +145,13 @@ export const areas = [
             "I overcome fears and limiting beliefs, stepping into my fullest potential.",
             "I approach life with curiosity, embracing challenges as opportunities to grow.",
             "I cultivate self-awareness, understanding my strengths and areas for improvement.",
+        ],
+        prompt_questions: [
+            "What is one personal challenge or fear you’d love to conquer, and how would it feel to overcome it?",
+            "What skills or knowledge do you dream of mastering, and how could they transform your life?",
+            "How would your life look if you became the best version of yourself?",
+            "What inspires you to grow, and how can you bring more of that into your life?",
+            "If you had unlimited time and resources, what would you dedicate yourself to learning or improving?",
         ],
     },
     {
@@ -125,6 +171,13 @@ export const areas = [
             "I express myself creatively through art, music, writing, or other forms of self-expression.",
             "I embrace spontaneity and adventure, adding excitement to my routine.",
         ],
+        prompt_questions: [
+            "What is one adventure or experience you’ve always wanted to try but haven’t yet?",
+            "If you had a full day to dedicate to fun and creativity, what would you do?",
+            "How can you bring more joy and playfulness into your daily routine?",
+            "What creative projects or hobbies would you pursue if there were no limitations?",
+            "If your life were a highlight reel of fun and excitement, what would it include?",
+        ],
     },
     {
         name: "Physical Environment",
@@ -142,6 +195,13 @@ export const areas = [
             "I maintain a clutter-free environment that supports my mental clarity.",
             "I live in harmony with nature, adopting sustainable and eco-friendly practices.",
             "I personalize my spaces to reflect my style, values, and goals.",
+        ],
+        prompt_questions: [
+            "What does your ideal home or workspace look and feel like?",
+            "How can you transform your environment to inspire creativity and productivity?",
+            "What changes would make your home a sanctuary of peace and relaxation?",
+            "How can you make your physical space align better with your values and lifestyle?",
+            "What is one thing you can add or remove from your environment to bring more joy?",
         ],
     },
     {
@@ -161,6 +221,13 @@ export const areas = [
             "I mentor and support others, sharing my experiences to help them grow.",
             "I advocate for social causes, using my voice and resources to drive positive change.",
         ],
+        prompt_questions: [
+            "What kind of impact do you dream of making in your community?",
+            "How can you use your unique talents to help others?",
+            "What causes or issues are you most passionate about supporting?",
+            "If you were a role model in your community, what would you want to be known for?",
+            "What legacy do you want to leave through your contributions to others?",
+        ],
     },
     {
         name: "Career and Work",
@@ -178,6 +245,13 @@ export const areas = [
             "I am continuously learning and expanding my skill set to stay ahead in my field.",
             "I balance a thriving career with a fulfilling personal life, feeling energized and accomplished.",
             "I am recognized as a thought leader, contributing to my field and mentoring others.",
+        ],
+        prompt_questions: [
+            "If you could design your dream job, what would that look like?",
+            "What legacy do you want to leave in your industry or profession?",
+            "How would you like to feel at the end of each workday?",
+            "What professional challenge or goal excites you the most right now?",
+            "If success was guaranteed, what bold career move would you make today?",
         ],
     },
     {
@@ -197,6 +271,13 @@ export const areas = [
             "I balance entrepreneurship with personal time, avoiding burnout and staying motivated.",
             "I make a positive impact in my industry and community through my business ventures.",
         ],
+        prompt_questions: [
+            "What would your dream business look like if resources and time were unlimited?",
+            "How do you envision impacting your industry or community through your business?",
+            "What motivates you most about your business, and how can you build on that?",
+            "If you achieved everything you wanted in your business, what would your life look like?",
+            "What bold or innovative ideas are you excited to bring to life in your business?",
+        ],
     },
     {
         name: "Finances",
@@ -213,6 +294,13 @@ export const areas = [
             "I save and invest wisely, ensuring long-term stability and generational wealth.",
             "I live debt-free, with a clear and confident understanding of my financial goals.",
             "I manage my finances effortlessly, enjoying both security and occasional indulgences",
+        ],
+        prompt_questions: [
+            "What does financial freedom mean to you, and how would your life change if you achieved it?",
+            "If money weren’t a concern, what passions or causes would you pursue?",
+            "What would it look like to have complete control and confidence over your financial future?",
+            "How would you use wealth to create meaningful experiences for yourself and others?",
+            "Imagine your ideal financial situation five years from now—what does it include?",
         ],
     },
 ];
