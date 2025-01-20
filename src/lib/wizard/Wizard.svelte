@@ -1,5 +1,6 @@
 <script lang="ts">
     import Progress           from "./Progress.svelte";
+    import ReflectionStep     from "./steps/reflection.svelte";
     import AreasStep          from "./steps/areas.svelte";
     import SelectAreasStep    from "./steps/areas-select.svelte";
     import SelfAssessmentStep from "./steps/self-assessment.svelte";
@@ -8,6 +9,7 @@
     import GoalSettingStep    from "./steps/goal-setting.svelte";
 
     const steps = [
+        ReflectionStep,
         AreasStep,
         SelectAreasStep,
         SelfAssessmentStep,
