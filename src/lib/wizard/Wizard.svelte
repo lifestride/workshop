@@ -44,8 +44,8 @@
     $inspect(currentStep);
 </script>
 
+<Progress {steps} {currentStep} />
 <form>
-    <Progress {steps} {currentStep} />
     <svelte:component this={steps[currentStep - 1]} />
 
     <nav>

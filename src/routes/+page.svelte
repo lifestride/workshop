@@ -2,6 +2,6 @@
     import Wizard from "$lib/wizard/Wizard.svelte";
 </script>
 
-<h1>Laife Planner Workshop</h1>
+<header>Laife Planner Workshop</header>
 
 <Wizard />

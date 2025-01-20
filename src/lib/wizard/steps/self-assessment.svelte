@@ -3,7 +3,7 @@
 </script>
 
 <article class="prose max-w-full">
-    <h2>Self Assessment</h2>
+    <h1>Self Assessment</h1>
     <section>
         <p>
             Being aware of your current state is crucial for tracking progress.
@@ -13,7 +13,7 @@
     </section>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         {#each areas as area}
-            <section class="p-4 bg-neutral-100">
+            <section class="card bg-neutral-100">
                 <h4 class="mt-0">{area.name}</h4>
                 <ul>
                     {#each area.assessment as question}

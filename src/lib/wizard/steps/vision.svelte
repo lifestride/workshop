@@ -3,7 +3,7 @@
 </script>
 
 <article class="prose max-w-full">
-    <h2>Vision</h2>
+    <h1>Vision</h1>
     <section>
         <p>
             The&nbsp;next step would be&nbsp;for&nbsp;you to&nbsp;create a&nbsp;vision for&nbsp;what you want in&nbsp;each area of&nbsp;your
@@ -14,7 +14,7 @@
     </section>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         {#each areas as area}
-            <section class="p-4 bg-neutral-100">
+            <section class="card bg-neutral-100">
                 <h4 class="mt-0">{area.name}</h4>
                 <ul>
                     {#each area.sample_statements as statement}

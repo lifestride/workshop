@@ -2,7 +2,7 @@
 </script>
 
 <article class="prose max-w-full">
-    <h2>Goal Setting and Action Plans</h2>
+    <h1>Goal Setting and Action Plans</h1>
     <section>
         <p>
             Congratulations, you have already created a&nbsp;vision for&nbsp;your areas of&nbsp;life.
@@ -16,9 +16,9 @@
         </p>
     </section>
     <section class="grid grid-cols-1 md:grid-cols-2 gap-2">
-        <header class="w-full bg-zinc-100 p-2 rounded-lg col-span-2 font-bold text-center">Health and Fitness</header>
+        <header class="card bg-zinc-100 !p-2 col-span-2 font-bold text-center">Health and Fitness</header>
 
-        <div class="w-full bg-blue-100 p-4 rounded-lg col-span-2">
+        <div class="card bg-blue-100 col-span-2">
             <h4 class="m-0">Big 3 Annual Goals</h4>
             <ul class="m-0">
                 <li>Maintain a healthy weight and visible muscle tone throughout the year. 15% BF Dexa Scans.</li>
@@ -27,7 +27,7 @@
             </ul>
         </div>
 
-        <div class="w-full bg-green-100 p-4 rounded-lg">
+        <div class="card bg-green-100">
             <h4 class="m-0">Q1 Key Milestones</h4>
             <ul class="m-0">
                 <li>Baseline Dexa scans and Initial doctor visits, Progress photos</li>
@@ -36,7 +36,7 @@
             </ul>
         </div>
 
-        <div class="w-full bg-yellow-100 p-4 rounded-lg">
+        <div class="card bg-yellow-100">
             <h4 class="m-0">Q2 Key Milestones</h4>
             <ul class="m-0">
                 <li>Try out HIIT Cardio. Dexa Scan - 2%.</li>
@@ -45,7 +45,7 @@
             </ul>
         </div>
 
-        <div class="w-full bg-red-100 p-4 rounded-lg">
+        <div class="card bg-red-100">
             <h4 class="m-0">Q3 Key Milestones</h4>
             <ul class="m-0">
                 <li>Integrate yoga/Pilates to improve core strength and flexibility.</li>
@@ -54,7 +54,7 @@
             </ul>
         </div>
 
-        <div class="w-full bg-purple-100 p-4 rounded-lg">
+        <div class="card bg-purple-100">
             <h4 class="m-0">Q4 Key milestones</h4>
             <ul class="m-0">
                 <li>Final Race. Plan for recovery/maintenance program</li>
@@ -63,9 +63,9 @@
             </ul>
         </div>
 
-        <div class="w-full p-2 rounded-lg col-span-2 font-bold text-center">Gauge for Success</div>
+        <div class="card !p-2 col-span-2 font-bold text-center">Gauge for Success</div>
 
-        <div class="w-full bg-lime-100 p-4 rounded-lg">
+        <div class="card bg-lime-100">
             <h4 class="m-0">Overall Self-Scoring</h4>
             <ul class="m-0">
                 <li>Score 0: Poorly eating, no muscle tone, low energy.</li>
@@ -73,7 +73,7 @@
             </ul>
         </div>
 
-        <div class="w-full bg-pink-100 p-4 rounded-lg">
+        <div class="card bg-pink-100">
             <h4 class="m-0">Metrics</h4>
             <ul class="m-0">
                 <li>Running logs; number of races completed.</li>

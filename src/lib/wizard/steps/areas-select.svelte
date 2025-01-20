@@ -3,7 +3,7 @@
 </script>
 
 <article class="prose max-w-full">
-    <h2>Select your Life Areas</h2>
+    <h1>Select your Life Areas</h1>
     <section>
         <p>After your previous reflection, let’s now select your own areas of life.</p>
         <p>Below are some examples of the most common areas of life people choose from. Most people usually pick between 4 to 8 areas of
