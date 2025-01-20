@@ -1,11 +1,11 @@
 <script lang="ts">
-    import Progress from "./Progress.svelte";
-    import StepOne  from "./Step1.svelte";
-    import StepTwo  from "./Step2.svelte";
+    import Progress        from "./Progress.svelte";
+    import AreasStep       from "./steps/areas.svelte";
+    import SelectAreasStep from "./steps/areas-select.svelte";
 
     const steps = [
-        StepOne,
-        StepTwo,
+        AreasStep,
+        SelectAreasStep,
     ];
 
     let currentStep = $state(1);
