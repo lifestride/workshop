@@ -40,11 +40,13 @@
     <Progress {steps} {currentStep} />
     <svelte:component this={steps[currentStep - 1]} />
 
-    {#if !isAtFirstStep()}
-        <button type="button" class="back" on:click={previous}>Back</button>
-    {/if}
+    <nav>
+        {#if !isAtFirstStep()}
+            <button type="button" class="back" on:click={previous}>Back</button>
+        {/if}
 
-    {#if !isAtLastStep()}
-        <button type="button" class="next" on:click={next}>Next</button>
-    {/if}
+        {#if !isAtLastStep()}
+            <button type="button" class="next" on:click={next}>Next</button>
+        {/if}
+    </nav>
 </form>
