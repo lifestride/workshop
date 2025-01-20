@@ -1,21 +1,48 @@
-<script>
-    import {writable} from 'svelte/store';
-    import StepOne from './Step1.svelte';
-    import StepTwo from './Step2.svelte';
+<script lang="ts">
+    import StepOne from "./Step1.svelte";
+    import StepTwo from "./Step2.svelte";
 
-    const currentStep = writable(1);
+    const steps = [
+        StepOne,
+        StepTwo,
+    ];
 
-    const nextStep = () => {
-        currentStep.update(n => n + 1);
-    };
+    let currentStep = $state(1);
 
-    const prevStep = () => {
-        currentStep.update(n => n - 1);
-    };
+    function isAtFirstStep() {
+        return currentStep === 1;
+    }
+
+    function isAtLastStep() {
+        return currentStep === steps.length;
+    }
+
+    function navigateToStep(step: number) {
+        console.log("navigate-to-step:", step);
+        if (step >= 1 && step <= steps.length) {
+            currentStep = step;
+        }
+    }
+
+    function next() {
+        navigateToStep(currentStep + 1);
+    }
+
+    function previous() {
+        navigateToStep(currentStep - 1);
+    }
+
+    $inspect(currentStep);
 </script>
 
-{#if $currentStep === 1}
-    <StepOne {nextStep} />
-{:else if $currentStep === 2}
-    <StepTwo {nextStep} {prevStep} />
-{/if}
+<form>
+    <svelte:component this={steps[currentStep - 1]} />
+
+    {#if !isAtFirstStep()}
+        <button type="button" class="back" on:click={previous}>Back</button>
+    {/if}
+
+    {#if !isAtLastStep()}
+        <button type="button" class="next" on:click={next}>Next</button>
+    {/if}
+</form>

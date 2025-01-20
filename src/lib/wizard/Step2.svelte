@@ -1,7 +1,4 @@
-<script>
-    export let nextStep;
-    export let prevStep;
-
+<script lang="ts">
     const areas = [
         {
             name: 'Health and Fitness',
@@ -69,18 +66,14 @@
     </section>
     <section>
         <h3>Activity</h3>
-        <form>
-            <p>After reviewing all the different areas of life, select the areas you would like to focus:</p>
-            <ul>
-                {#each areas as area, i}
-                    <li>
-                        <input type="checkbox" id="area-{i}" />
-                        <label for="area-{i}">{area.name}</label>
-                    </li>
-                {/each}
-            </ul>
-            <button type="button" on:click={prevStep}>Back</button>
-            <button type="button" on:click={nextStep}>Next</button>
-        </form>
+        <p>After reviewing all the different areas of life, select the areas you would like to focus:</p>
+        <ul>
+            {#each areas as area, i}
+                <li>
+                    <input type="checkbox" id="area-{i}" />
+                    <label for="area-{i}">{area.name}</label>
+                </li>
+            {/each}
+        </ul>
     </section>
 </article>
