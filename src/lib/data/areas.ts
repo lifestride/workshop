@@ -9,6 +9,13 @@ export const areas = [
             "Are you getting enough rest and sleep to support your body’s needs?",
             "Are there any physical discomforts or symptoms you’ve been ignoring?",
         ],
+        sample_statements: [
+            "I feel vibrant and energetic, fueled by a balanced diet and regular exercise.",
+            "My body is strong and flexible, supporting me in all of life’s activities.",
+            "I maintain a healthy weight and feel confident in my appearance.",
+            "I prioritize preventative healthcare and consistently make choices that nurture my body.",
+            "I wake up each day feeling well-rested, ready to take on challenges with enthusiasm.",
+        ],
     },
     {
         name: "Emotional Well-Being",
@@ -19,6 +26,13 @@ export const areas = [
             "How well are you coping with challenges or setbacks in your life?",
             "Do you have someone to talk to about your emotions or struggles?",
             "What habits or practices could help you improve your emotional well-being?",
+        ],
+        sample_statements: [
+            "I navigate stress with calm and clarity, maintaining peace of mind in all situations.",
+            "I prioritize self-care, setting boundaries that protect my emotional well-being.",
+            "I build resilience, bouncing back quickly from setbacks with a positive attitude.",
+            "I embrace vulnerability and authenticity, fostering deeper connections with others.",
+            "I invest in mental wellness practices, feeling balanced and optimistic.",
         ],
     },
     {
@@ -31,6 +45,13 @@ export const areas = [
             "Do you feel a sense of gratitude and inner peace in your daily life?",
             "Are there areas in your life where you feel disconnected or lacking meaning?",
         ],
+        sample_statements: [
+            "I feel deeply connected to my spirituality, aligning my actions with my values.",
+            "I find purpose and meaning in my life, contributing to something greater than myself.",
+            "I practice mindfulness daily, cultivating inner peace and clarity.",
+            "I leave a lasting legacy, positively impacting the lives of those around me.",
+            "I live with gratitude, appreciating life’s blessings and challenges",
+        ],
     },
     {
         name: "Relationships and Social Connection",
@@ -41,6 +62,13 @@ export const areas = [
             "Are you dedicating enough time to nurture your relationships?",
             "Do you feel comfortable asking for help or offering support to others?",
             "Are there any relationships in your life that feel draining or need resolution?",
+        ],
+        sample_statements: [
+            "I nurture a loving and passionate relationship with my partner, filled with trust and joy.",
+            "I create lasting memories with my children, guiding them with patience and wisdom.",
+            "I am surrounded by a supportive and inspiring circle of friends.",
+            "I build strong professional networks, connecting with like-minded individuals who uplift and challenge me.",
+            "I deepen my relationships by listening, communicating, and showing appreciation daily.",
         ],
     },
     {
@@ -53,6 +81,14 @@ export const areas = [
             "How well/ How often do you communicate with your children?",
             "What is one habit you could improve to better connect with your kids?",
         ],
+        sample_statements: [
+            "I create a nurturing and joyful environment for my family.",
+            "I raise confident and compassionate children.",
+            "I build meaningful family traditions that strengthen our bonds.",
+            "I communicate openly and respectfully with my partner.",
+            "I support my children’s education and growth, encouraging their unique talents.",
+            "I foster emotional intelligence in my children, helping them navigate challenges.",
+        ],
     },
     {
         name: "Personal Growth and Education",
@@ -63,6 +99,13 @@ export const areas = [
             "Are you actively challenging yourself to step out of your comfort zone?",
             "Do you feel like you’re making meaningful progress toward becoming your best self?",
             "What limiting beliefs or fears might be holding you back?",
+        ],
+        sample_statements: [
+            "I am constantly learning, reading, and acquiring new skills that enrich my life and career.",
+            "I set and achieve personal goals that align with my passions and purpose.",
+            "I overcome fears and limiting beliefs, stepping into my fullest potential.",
+            "I approach life with curiosity, embracing challenges as opportunities to grow.",
+            "I cultivate self-awareness, understanding my strengths and areas for improvement.",
         ],
     },
     {
@@ -75,6 +118,13 @@ export const areas = [
             "When was the last time you explored something new or adventurous?",
             "Are there opportunities to incorporate more fun or spontaneity into your routine?",
         ],
+        sample_statements: [
+            "I regularly engage in hobbies that bring me joy and allow my creativity to flourish.",
+            "I explore the world through travel, immersing myself in new cultures and experiences.",
+            "I make time for laughter, play, and relaxation with family and friends.",
+            "I express myself creatively through art, music, writing, or other forms of self-expression.",
+            "I embrace spontaneity and adventure, adding excitement to my routine.",
+        ],
     },
     {
         name: "Physical Environment",
@@ -85,6 +135,13 @@ export const areas = [
             "Does your environment support your goals, productivity, and well-being?",
             "Are there any changes you could make to improve the functionality or aesthetics of your space?",
             "How well does your physical environment align with your values, such as sustainability?",
+        ],
+        sample_statements: [
+            "I create a home that feels peaceful, organized, and welcoming.",
+            "I design a workspace that inspires focus, creativity, and productivity.",
+            "I maintain a clutter-free environment that supports my mental clarity.",
+            "I live in harmony with nature, adopting sustainable and eco-friendly practices.",
+            "I personalize my spaces to reflect my style, values, and goals.",
         ],
     },
     {
@@ -97,6 +154,13 @@ export const areas = [
             "What positive impact have you made in your community recently?",
             "Are there new opportunities for you to contribute or give back in meaningful ways?",
         ],
+        sample_statements: [
+            "I actively contribute to causes I care about, making a meaningful impact.",
+            "I volunteer regularly, giving my time and skills to support others.",
+            "I foster a sense of belonging by building connections in my community.",
+            "I mentor and support others, sharing my experiences to help them grow.",
+            "I advocate for social causes, using my voice and resources to drive positive change.",
+        ],
     },
     {
         name: "Career and Work",
@@ -107,6 +171,13 @@ export const areas = [
             "How well do you balance the demands of your work with your personal well-being?",
             "How strong are your professional relationships or networks, and are you nurturing them effectively?",
             "What obstacles or challenges are preventing you from reaching your full potential at work?",
+        ],
+        sample_statements: [
+            "I am leading a successful team, inspiring innovation and driving results in my industry.",
+            "I enjoy my job and continuously contribute to my team.",
+            "I am continuously learning and expanding my skill set to stay ahead in my field.",
+            "I balance a thriving career with a fulfilling personal life, feeling energized and accomplished.",
+            "I am recognized as a thought leader, contributing to my field and mentoring others.",
         ],
     },
     {
@@ -119,6 +190,13 @@ export const areas = [
             "How well are you balancing your entrepreneurial goals with your personal life?",
             "What new opportunities or innovations could you explore to grow your business?",
         ],
+        sample_statements: [
+            "I have built a successful business that provides financial freedom.",
+            "I embrace innovation, constantly creating new opportunities for growth.",
+            "I lead with integrity, inspiring my team to achieve shared goals.",
+            "I balance entrepreneurship with personal time, avoiding burnout and staying motivated.",
+            "I make a positive impact in my industry and community through my business ventures.",
+        ],
     },
     {
         name: "Finances",
@@ -129,6 +207,12 @@ export const areas = [
             "How confident do you feel about handling unexpected expenses or emergencies?",
             "Are you making progress toward your long-term financial goals, such as savings or investments?",
             "How comfortable are you addressing or discussing your financial concerns?",
+        ],
+        sample_statements: [
+            "I have achieved financial independence, allowing me to pursue my passions freely.",
+            "I save and invest wisely, ensuring long-term stability and generational wealth.",
+            "I live debt-free, with a clear and confident understanding of my financial goals.",
+            "I manage my finances effortlessly, enjoying both security and occasional indulgences",
         ],
     },
 ];
