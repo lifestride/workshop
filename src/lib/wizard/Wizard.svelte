@@ -5,6 +5,7 @@
     import SelfAssessmentStep from "./steps/self-assessment.svelte";
     import VisionStep         from "./steps/vision.svelte";
     import CreateVisionStep   from "./steps/vision-create.svelte";
+    import GoalSettingStep    from "./steps/goal-setting.svelte";
 
     const steps = [
         AreasStep,
@@ -12,6 +13,7 @@
         SelfAssessmentStep,
         VisionStep,
         CreateVisionStep,
+        GoalSettingStep,
     ];
 
     let currentStep = $state(1);
