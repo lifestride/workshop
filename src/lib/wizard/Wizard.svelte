@@ -1,11 +1,13 @@
 <script lang="ts">
-    import Progress        from "./Progress.svelte";
-    import AreasStep       from "./steps/areas.svelte";
-    import SelectAreasStep from "./steps/areas-select.svelte";
+    import Progress           from "./Progress.svelte";
+    import AreasStep          from "./steps/areas.svelte";
+    import SelectAreasStep    from "./steps/areas-select.svelte";
+    import SelfAssessmentStep from "./steps/self-assessment.svelte";
 
     const steps = [
         AreasStep,
         SelectAreasStep,
+        SelfAssessmentStep,
     ];
 
     let currentStep = $state(1);
