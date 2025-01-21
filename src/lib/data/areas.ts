@@ -1,5 +1,6 @@
 export const areas = [
     {
+        uid: "health-fitness",
         name: "Health and Fitness",
         description: "Nutrition & Diet, Exercise & Fitness, Overall Healthcare, Energy Management, Rest/Sleep Quality.",
         assessment: [
@@ -29,6 +30,7 @@ export const areas = [
         ],
     },
     {
+        uid: "emotional-well-being",
         name: "Emotional Well-Being",
         description: "Stress Management, Emotional Resilience, Self-Care Practices, Coping with Anxiety/Depression, Therapy & Mental Wellness Resources.",
         assessment: [
@@ -54,7 +56,8 @@ export const areas = [
         ],
     },
     {
-        name: "Spirituality and Purpose",
+        uid: "purpose-spirituality",
+        name: "Purpose and Spirituality",
         description: "Mindfulness Practices (Meditation, Journaling), Religious/Spiritual Life, Seeking Purpose & Meaning, Legacy & Contribution to the World, Gratitude Practices.",
         assessment: [
             "Do you feel aligned with your values and life purpose?",
@@ -79,6 +82,7 @@ export const areas = [
         ],
     },
     {
+        uid: "relationships-social-connection",
         name: "Relationships and Social Connection",
         description: "Romantic Relationships (Marriage/Partnership), Work-Life Balance for Moms/Parents, Raising Children, Supporting Teenagers, Friendships & Social Circles, Building Community Connections, Networking for Social and Professional Goals.",
         assessment: [
@@ -104,7 +108,8 @@ export const areas = [
         ],
     },
     {
-        name: "Parenting and Family",
+        uid: "family-parenting",
+        name: "Family and Parenting",
         description: "Household management, self- care for busy parents, creating a healthy family environment, bonding time with children, supporting kids, teaching life skills.",
         assessment: [
             "Are you spending enough quality time with your family?",
@@ -130,6 +135,7 @@ export const areas = [
         ],
     },
     {
+        uid: "personal-growth-education",
         name: "Personal Growth and Education",
         description: "Lifelong Learning & Skill Development, Pursuing Personal Goals & Dreams, Emotional Intelligence Development, Overcoming Limiting Beliefs, Building Confidence & Self-Esteem, Education & Certification.",
         assessment: [
@@ -155,6 +161,7 @@ export const areas = [
         ],
     },
     {
+        uid: "fun-recreation",
         name: "Fun and Recreation",
         description: "Hobbies & Creative Expression, Travel & Adventure, Relaxation & Leisure Activities, Family Fun & Bonding Activities, cultivating Joy and Playfulness.",
         assessment: [
@@ -180,6 +187,7 @@ export const areas = [
         ],
     },
     {
+        uid: "physical-environment",
         name: "Physical Environment",
         description: "Creating a Comfortable Home, Organizing & Decluttering Spaces, Living in Alignment with Nature (Sustainability), Creating a Productivity-Enhancing Workspace.",
         assessment: [
@@ -205,6 +213,7 @@ export const areas = [
         ],
     },
     {
+        uid: "community-contribution",
         name: "Community and Contribution",
         description: "Volunteering & Giving Back, Making a Positive Community Impact, Advocacy and Supporting Social Causes.",
         assessment: [
@@ -230,6 +239,7 @@ export const areas = [
         ],
     },
     {
+        uid: "career-work",
         name: "Career and Work",
         description: "Career/Work Advancement, Side Hustles/Passion Projects, Leadership/Team Dynamics, Professional Networking, Productivity & Time Management, Innovation & Creative Problem-Solving.",
         assessment: [
@@ -255,6 +265,7 @@ export const areas = [
         ],
     },
     {
+        uid: "entrepreneurship-business",
         name: "Entrepreneurship and Business",
         description: "Business Strategy & Scaling, Balancing Work and Family Life, Innovation and Idea Generation, Networking & Brand Building.",
         assessment: [
@@ -280,6 +291,7 @@ export const areas = [
         ],
     },
     {
+        uid: "finances",
         name: "Finances",
         description: "Financial Stability & Wealth Building, Budgeting & Financial Planning, Saving & Investing, Debt Management, Wealth creation.",
         assessment: [

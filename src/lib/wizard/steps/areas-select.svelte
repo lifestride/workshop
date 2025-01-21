@@ -1,5 +1,7 @@
 <script lang="ts">
     import { areas } from "$lib/data/areas";
+
+    let selectedAreas = $state([]);
 </script>
 
 <article class="prose max-w-full">
@@ -11,19 +13,11 @@
         <p>You do not need to select all these areas; start small and then you can expand to other areas.</p>
 
         <ul>
-            {#each areas as area}
-                <li><strong>{area.name}</strong>: {area.description}</li>
-            {/each}
-        </ul>
-    </section>
-    <section>
-        <h3>Activity</h3>
-        <p>After reviewing all the different areas of life, select the areas you would like to focus:</p>
-        <ul>
             {#each areas as area, i}
                 <li>
-                    <input type="checkbox" id="area-{i}" />
-                    <label for="area-{i}">{area.name}</label>
+                    <input type="checkbox" name="selectedAreas" bind:group={selectedAreas} value="{area.uid}" id="area-{i}" />
+                    <label for="area-{i}" class="font-bold">{area.name}</label>
+                    <div>{area.description}</div>
                 </li>
             {/each}
         </ul>
