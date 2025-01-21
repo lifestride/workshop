@@ -31,6 +31,8 @@
         localforage.setItem("current-step", value);
     });
 
+    let Step = $derived(steps[$currentStep - 1]);
+
     function isAtFirstStep() {
         return $currentStep === 1;
     }
@@ -59,7 +61,7 @@
 
 <Progress {steps} {currentStep} />
 <form>
-    <svelte:component this={steps[$currentStep - 1]} />
+    <Step />
 
     <nav>
         {#if !isAtFirstStep()}
