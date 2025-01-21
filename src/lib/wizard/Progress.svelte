@@ -2,7 +2,7 @@
     let { steps, currentStep } = $props();
 </script>
 
-<progress value="{currentStep}" max="{steps.length}"></progress>
+<progress value="{$currentStep}" max="{steps.length}"></progress>
 
 <!--
 <div class="progress-bar flex justify-between mb-6">
