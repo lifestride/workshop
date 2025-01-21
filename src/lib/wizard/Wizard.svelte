@@ -2,7 +2,9 @@
     import { writable } from "svelte/store";
     import localforage  from "localforage";
 
-    import Progress           from "./Progress.svelte";
+    import Navigation from "$lib/wizard/Navigation.svelte";
+    import Progress   from "./Progress.svelte";
+
     import ReflectionStep     from "./steps/reflection.svelte";
     import AreasStep          from "./steps/areas.svelte";
     import SelectAreasStep    from "./steps/areas-select.svelte";
@@ -33,43 +35,15 @@
 
     let Step = $derived(steps[$currentStep - 1]);
 
-    function isAtFirstStep() {
-        return $currentStep === 1;
-    }
-
-    function isAtLastStep() {
-        return $currentStep === steps.length;
-    }
-
-    function navigateToStep(step: number) {
-        console.log("navigate-to-step:", step);
-        if (step >= 1 && step <= steps.length) {
-            currentStep.set(step);
+    function navigate(toStep: number) {
+        if (toStep >= 1 && toStep <= steps.length) {
+            currentStep.set(toStep);
         }
     }
-
-    function next() {
-        navigateToStep($currentStep + 1);
-    }
-
-    function previous() {
-        navigateToStep($currentStep - 1);
-    }
-
-    $inspect($currentStep);
 </script>
 
 <Progress {steps} {currentStep} />
 <form>
     <Step />
-
-    <nav>
-        {#if !isAtFirstStep()}
-            <button type="button" class="back" on:click={previous}>Back</button>
-        {/if}
-
-        {#if !isAtLastStep()}
-            <button type="button" class="next" on:click={next}>Next</button>
-        {/if}
-    </nav>
+    <Navigation {steps} {currentStep} {navigate} />
 </form>
