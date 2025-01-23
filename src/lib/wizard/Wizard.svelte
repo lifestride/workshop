@@ -1,6 +1,5 @@
 <script lang="ts">
-    import { writable } from "svelte/store";
-    import localforage  from "localforage";
+    import { persistentStore } from "$lib/persistentStore";
 
     import Navigation from "$lib/wizard/Navigation.svelte";
     import Progress   from "./Progress.svelte";
@@ -23,15 +22,7 @@
         GoalSettingStep,
     ];
 
-    const currentStep = writable<number>(1);
-
-    localforage.getItem<number>("current-step").then((value) => {
-        if (value !== null) currentStep.set(value);
-    });
-
-    currentStep.subscribe((value: number) => {
-        localforage.setItem("current-step", value);
-    });
+    const currentStep = persistentStore("current-step", 1);
 
     let Step = $derived(steps[$currentStep - 1]);
 
