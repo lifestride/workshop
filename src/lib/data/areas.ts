@@ -1,4 +1,6 @@
-export const areas = [
+import type { Area } from "../model/Area";
+
+export const areas: Area[] = [
     {
         uid: "health-fitness",
         name: "Health and Fitness",

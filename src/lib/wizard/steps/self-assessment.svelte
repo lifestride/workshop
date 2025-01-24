@@ -1,5 +1,13 @@
 <script lang="ts">
-    import { areas } from "$lib/data/areas";
+    import { persistentStore } from "$lib/persistentStore";
+    import { areas }           from "$lib/data/areas";
+    import type { Area }       from "$lib/model/Area";
+
+    const selectedAreas = persistentStore("selected-areas", []);
+
+    function isSelected(area: Area): boolean {
+        return $selectedAreas.includes(area.uid);
+    }
 </script>
 
 <article class="prose max-w-full">
@@ -13,14 +21,16 @@
     </section>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         {#each areas as area}
-            <section class="card bg-neutral-100">
-                <h4 class="mt-0">{area.name}</h4>
-                <ul>
-                    {#each area.assessment as question}
-                        <li>{question}</li>
-                    {/each}
-                </ul>
-            </section>
+            {#if isSelected(area)}
+                <section class="card bg-neutral-100">
+                    <h4 class="mt-0">{area.name}</h4>
+                    <ul>
+                        {#each area.assessment as question}
+                            <li>{question}</li>
+                        {/each}
+                    </ul>
+                </section>
+            {/if}
         {/each}
     </div>
     <section>
