@@ -1,7 +1,8 @@
 <script lang="ts">
-    import { areas } from "$lib/data/areas";
+    import { persistentStore } from "$lib/persistentStore";
+    import { areas }           from "$lib/data/areas";
 
-    let selectedAreas = $state([]);
+    const selectedAreas = persistentStore("selected-areas", []);
 </script>
 
 <article class="prose max-w-full">
@@ -15,7 +16,7 @@
         <ul>
             {#each areas as area, i}
                 <li>
-                    <input type="checkbox" name="selectedAreas" bind:group={selectedAreas} value="{area.uid}" id="area-{i}" />
+                    <input type="checkbox" name="selected-areas" bind:group={$selectedAreas} value="{area.uid}" id="area-{i}" />
                     <label for="area-{i}" class="font-bold">{area.name}</label>
                     <div>{area.description}</div>
                 </li>
