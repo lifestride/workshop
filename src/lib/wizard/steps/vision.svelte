@@ -10,7 +10,7 @@
     }
 </script>
 
-<article class="prose max-w-full">
+<article class="prose">
     <h1>Vision</h1>
     <section>
         <p>

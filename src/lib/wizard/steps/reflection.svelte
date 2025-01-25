@@ -2,7 +2,7 @@
     import RichTextEditor from "$lib/components/RichTextEditor.svelte";
 </script>
 
-<article class="prose max-w-full">
+<article class="prose">
     <h1>Reflection</h1>
     <section>
         <p>Let’s start with&nbsp;a&nbsp;short reflection on&nbsp;your year:</p>

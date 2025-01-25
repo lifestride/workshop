@@ -5,7 +5,7 @@
     const selectedAreas = persistentStore("selected-areas", []);
 </script>
 
-<article class="prose max-w-full">
+<article class="prose">
     <h1>Select your Life Areas</h1>
     <section>
         <p>After your previous reflection, let’s now select your own areas of life.</p>

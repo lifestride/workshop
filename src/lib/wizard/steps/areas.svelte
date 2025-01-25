@@ -2,7 +2,7 @@
     import RichTextEditor from "$lib/components/RichTextEditor.svelte";
 </script>
 
-<article class="prose max-w-full">
+<article class="prose">
     <h1>Areas of Life</h1>
     <section>
         <p>Think about the different roles you play in your life. Reflect on the following questions:</p>

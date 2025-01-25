@@ -11,7 +11,7 @@
     }
 </script>
 
-<article class="prose max-w-full">
+<article class="prose">
     <h1>Create Your Vision</h1>
     <p>Define a vision for each one of your areas.</p>
     {#each areas as area}

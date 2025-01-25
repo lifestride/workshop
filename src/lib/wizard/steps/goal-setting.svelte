@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<article class="prose max-w-full">
+<article class="prose">
     <h1>Goal Setting and Action Plans</h1>
     <section>
         <p>
