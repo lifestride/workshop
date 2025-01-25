@@ -22,15 +22,15 @@ main > form > nav > button {
 }
 
 progress {
-    @apply w-full h-1 my-2 rounded;
+    @apply w-full h-1 my-2 rounded-xs;
 }
 
 progress::-webkit-progress-bar {
-    @apply rounded bg-gray-300;
+    @apply rounded-xs bg-gray-300;
 }
 
 progress::-webkit-progress-value {
-    @apply rounded bg-indigo-500;
+    @apply rounded-xs bg-indigo-500;
 }
 
 button.next::after {
