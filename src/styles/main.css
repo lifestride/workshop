@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./base.css" layer(base);
+@import "./wysiwyg.css" layer(base);
 
 body {
     @apply flex justify-center items-center min-h-screen bg-gray-100;
