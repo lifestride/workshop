@@ -1,5 +1,5 @@
 <script lang="ts">
-    import RichTextEditor      from "$lib/components/RichTextEditor.svelte";
+    import TiptapEditor        from "$lib/components/TiptapEditor.svelte";
     import { persistentStore } from "$lib/persistentStore";
     import { areas }           from "$lib/data/areas";
     import type { Area }       from "$lib/model/Area";
@@ -36,7 +36,7 @@
                         </ul>
                     </div>
                 </div>
-                <RichTextEditor />
+                <TiptapEditor />
             </section>
         {/if}
     {/each}
