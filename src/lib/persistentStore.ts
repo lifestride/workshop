@@ -1,12 +1,17 @@
-import { writable } from "svelte/store";
-import localforage  from "localforage";
+import { writable }      from "svelte/store";
+import type { Writable } from "svelte/store";
+import localforage       from "localforage";
 
 const localStore = localforage.createInstance({
     name: "workshop",
     storeName: "wizard",
 });
 
-export function persistentStore<T>(key: string, initialValue: T) {
+interface PersistentStore<T> extends Writable<T> {
+    remove: () => void;
+}
+
+export function persistentStore<T>(key: string, initialValue: T): PersistentStore<T> {
     const {subscribe, set, update} = writable(initialValue);
 
     type Mutator = (value: T) => T;

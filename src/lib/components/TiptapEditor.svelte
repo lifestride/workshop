@@ -7,7 +7,7 @@
     import Placeholder            from "@tiptap/extension-placeholder";
     import BubbleMenu             from "@tiptap/extension-bubble-menu";
 
-    let {content, update} = $props();
+    let { content, update } = $props();
 
     let containerElement: HTMLElement;
     let bubbleMenuElement: HTMLElement;
@@ -47,7 +47,7 @@
             extensions: extensions,
             editorProps: editorProps,
             content: $content,
-            onUpdate: ({editor}) => {
+            onUpdate: ({ editor }) => {
                 if (update) update(editor.getHTML());
             },
             onTransaction: () => { // force re-render so `editor.isActive` works as expected

@@ -22,7 +22,7 @@
         GoalSettingStep,
     ];
 
-    const currentStep = persistentStore("current-step", 1);
+    const currentStep = persistentStore<number>("current-step", 1);
 
     let Step = $derived(steps[$currentStep - 1]);
 

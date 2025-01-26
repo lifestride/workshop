@@ -20,10 +20,10 @@
 
 <nav>
     {#if !isAtFirstStep()}
-        <button type="button" class="back" on:click={previous}>Back</button>
+        <button type="button" class="back" onclick={previous}>Back</button>
     {/if}
 
     {#if !isAtLastStep()}
-        <button type="button" class="next" on:click={next}>Next</button>
+        <button type="button" class="next" onclick={next}>Next</button>
     {/if}
 </nav>
