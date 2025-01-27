@@ -6,6 +6,7 @@
 
     import ReflectionStep     from "./steps/reflection.svelte";
     import AreasStep          from "./steps/areas.svelte";
+    import WheelOfLife        from "./steps/wheel-of-life.svelte";
     import SelectAreasStep    from "./steps/areas-select.svelte";
     import SelfAssessmentStep from "./steps/self-assessment.svelte";
     import VisionStep         from "./steps/vision.svelte";
@@ -15,6 +16,7 @@
     const steps = [
         ReflectionStep,
         AreasStep,
+        WheelOfLife,
         SelectAreasStep,
         SelfAssessmentStep,
         VisionStep,
