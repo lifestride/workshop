@@ -12,8 +12,10 @@
 </script>
 
 <article class="prose">
-    <h1>Create Your Vision</h1>
-    <p>Define a vision for each one of your areas.</p>
+    <section>
+        <h1>Create Your Vision</h1>
+        <p>Define a vision for each one of your areas.</p>
+    </section>
     {#each areas as area}
         {#if isSelected(area)}
             <section>
@@ -35,8 +37,14 @@
                             {/each}
                         </ul>
                     </div>
-                </div>
-                <TiptapEditor />
+                    <div class="card">
+                        <h4>Your Vision</h4>
+                        <TiptapEditor />
+                    </div>
+                    <div class="card">
+                        <h4>Your Big Why</h4>
+                        <TiptapEditor />
+                    </div>
             </section>
         {/if}
     {/each}
