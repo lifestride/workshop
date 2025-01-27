@@ -58,6 +58,7 @@
         "@tiptap/extension-typography": "^2.11.3",
         "@tiptap/extension-underline": "^2.11.3",
         "@tiptap/starter-kit": "^2.11.3",
+        "apexcharts": "^4.4.0",
         "localforage": "^1.10.0"
     }
 }
