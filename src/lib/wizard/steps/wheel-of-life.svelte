@@ -1,6 +1,40 @@
 <script lang="ts">
-    import { areas }     from "$lib/data/areas";
-    import type { Area } from "$lib/model/Area";
+    import { onMount, onDestroy } from "svelte";
+    import ApexCharts             from "apexcharts";
+    import { areas }              from "$lib/data/areas";
+    import type { Area }          from "$lib/model/Area";
+
+    let chartContainerElement: HTMLElement;
+    let chart: ApexCharts;
+
+    const labels = areas.map((area: Area) => area.name);
+    const portion = Number((100 / labels.length).toFixed(1));
+    const series = Array(labels.length).fill(portion);
+
+    const chartOptions = {
+        chart: {
+            type: "pie",
+        },
+        series: series,
+        labels: labels,
+        dataLabels: {
+            enabled: false,
+        },
+        plotOptions: {
+            pie: {
+                expandOnClick: false
+            }
+        },
+    };
+
+    onMount(() => {
+        chart = new ApexCharts(chartContainerElement, chartOptions);
+        chart.render();
+    });
+
+    onDestroy(() => {
+        if (chart) chart.destroy();
+    });
 </script>
 
 <article class="prose">
@@ -12,5 +46,5 @@
             It&nbsp;assists in&nbsp;identifying areas that require more focus and&nbsp;improvement.
         </p>
     </section>
-    <div id="wheel-of-life"></div>
+    <div bind:this={chartContainerElement} id="wheel-of-life"></div>
 </article>
