@@ -58,7 +58,6 @@
         "@tiptap/extension-typography": "^2.11.3",
         "@tiptap/extension-underline": "^2.11.3",
         "@tiptap/starter-kit": "^2.11.3",
-        "localforage": "^1.10.0",
-        "quill": "^2.0.3"
+        "localforage": "^1.10.0"
     }
 }
