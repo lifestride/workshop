@@ -26,6 +26,10 @@ body > main article > section.two-cols > header {
     @apply bg-zinc-100 !p-2 col-span-2 font-bold text-center
 }
 
+body > main article > section + section {
+    @apply mt-5;
+}
+
 main > form > nav {
     @apply flex justify-end gap-2 py-2;
 }
