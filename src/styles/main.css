@@ -18,6 +18,14 @@ body > main article {
     @apply max-w-full;
 }
 
+body > main article > section.two-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-2;
+}
+
+body > main article > section.two-cols > header {
+    @apply bg-zinc-100 !p-2 col-span-2 font-bold text-center
+}
+
 main > form > nav {
     @apply flex justify-end gap-2 py-2;
 }

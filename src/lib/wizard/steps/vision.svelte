@@ -20,7 +20,7 @@
             You&nbsp;can use them and&nbsp;edit them to&nbsp;make them fit to&nbsp;your own areas.
         </p>
     </section>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section  class="two-cols">
         {#each areas as area}
             {#if isSelected(area)}
                 <section class="card bg-neutral-100">
@@ -33,5 +33,5 @@
                 </section>
             {/if}
         {/each}
-    </div>
+    </section>
 </article>

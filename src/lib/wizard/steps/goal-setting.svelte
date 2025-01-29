@@ -15,8 +15,9 @@
             This example may help you in&nbsp;establishing your own goals and&nbsp;milestones.
         </p>
     </section>
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-2">
-        <header class="card bg-zinc-100 !p-2 col-span-2 font-bold text-center">Health and Fitness</header>
+
+    <section class="two-cols">
+        <header class="card">Health and Fitness</header>
 
         <div class="card bg-blue-100 col-span-2">
             <h4 class="m-0">Big 3 Annual Goals</h4>
@@ -63,23 +64,16 @@
             </ul>
         </div>
 
-        <div class="card !p-2 col-span-2 font-bold text-center">Gauge for Success</div>
-
-        <div class="card bg-lime-100">
-            <h4 class="m-0">Overall Self-Scoring</h4>
+        <div class="card bg-lime-100 col-span-2">
+            <h4 class="m-0">Gauge for Success</h4>
             <ul class="m-0">
                 <li>Score 0: Poorly eating, no muscle tone, low energy.</li>
                 <li>Score 10: Visible muscle tone, running without injuries, free of major illness, nutrition mostly optimal.</li>
-            </ul>
-        </div>
-
-        <div class="card bg-pink-100">
-            <h4 class="m-0">Metrics</h4>
-            <ul class="m-0">
                 <li>Running logs; number of races completed.</li>
                 <li>Food tracking; water intake.</li>
                 <li>Dexa scans every month or quarter.</li>
                 <li>Regular health check ups</li>
             </ul>
+        </div>
     </section>
 </article>

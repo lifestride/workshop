@@ -19,7 +19,7 @@
             The table below contains questions for that would prompt some of your thinking to help you on an initial reflection.
         </p>
     </section>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section class="two-cols">
         {#each areas as area}
             {#if isSelected(area)}
                 <section class="card bg-neutral-100">
@@ -32,7 +32,7 @@
                 </section>
             {/if}
         {/each}
-    </div>
+    </section>
     <section>
         <h3>Activity</h3>
         <p>Write down your areas and score them from 1 to 10, where 10 is the highest and 1 is lowest.</p>
