@@ -5,4 +5,6 @@ export interface Area {
     assessment: string[];
     prompt_questions: string[];
     sample_statements: string[];
+    sample_goals: string[];
+    sample_success_gauges: string[];
 }

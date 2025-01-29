@@ -30,6 +30,26 @@ export const areas: Area[] = [
             "How would you feel waking up every morning with vibrant energy and strength?",
             "What new activity or sport would you love to try to challenge your body?",
         ],
+        sample_goals: [
+            "Exercise for 30 minutes, 4 times a week (e.g., gym, yoga, or walking).",
+            "Plan and prepare healthy meals for the week every Sunday.",
+            "Drink at least 8 glasses of water daily and track it using a hydration app.",
+            "Schedule and attend annual health checkups and dental visits.",
+            "Set a bedtime to ensure at least 7 hours of sleep each night.",
+            "Consistent sleep routine.",
+            "Create very simple stress management habits/routines.",
+
+        ],
+        sample_success_gauges: [
+            "Weekly track meals, water intake and exercise on a journal or on a digital app.",
+            "Track adherence to  physical exams and preventive care.",
+            "Use sleep tracker to ensure I am meeting my sleep hours",
+            "Self evaluate my energy levels and add to journal.",
+            "Log my weight or body measurements weekly.",
+            "Track my fitness level (i.e. Endurance, lifting, flexibility).",
+            "Monitor biometric markers (i.e, resting heart rate, HRV, etc.).",
+
+        ],
     },
     {
         uid: "emotional-well-being",
@@ -55,6 +75,20 @@ export const areas: Area[] = [
             "What could you achieve if stress or fear no longer held you back?",
             "How would you describe your ideal emotional state in a difficult situation?",
             "What does a day filled with joy, gratitude, and calmness look like to you?",
+        ],
+        sample_goals: [
+            "Practice mindfulness or meditation for 10 minutes daily using a guided app.",
+            "Journal 3 things I’m grateful for every evening before bed.",
+            "Schedule one self-care activity (massage, spa, reading time) per week.",
+            "Meet with a therapist or counselor monthly to work on emotional resilience.",
+            "Dedicate 30 minutes weekly to reflect on emotions and address stress triggers.",
+        ],
+        sample_success_gauges: [
+            "Use a mood tracker or app to log your moods.",
+            "Record moments when you effectively handled stress or emotionally challenging situations.",
+            "Track consistency in self-care practices like meditation, journaling, or therapy.",
+            "Reflect and log on the frequency of positive emotions like joy, gratitude, or calmness.",
+            "Evaluate your ability to maintain healthy emotional boundaries in relationships or work.",
         ],
     },
     {
@@ -82,6 +116,23 @@ export const areas: Area[] = [
             "What brings you the most peace, and how can you experience more of it?",
             "What would your life look like if you fully lived in alignment with your purpose?",
         ],
+        sample_goals: [
+            "Meditate or pray for 10 minutes each morning to start the day with intention.",
+            "Participate in a spiritual or personal growth retreat within the next year.",
+            "Volunteer monthly for a cause that resonates with my values and purpose.",
+            "Write a personal mission statement and review it weekly to align actions with purpose.",
+            "Begin a gratitude journal, listing 5 things I’m thankful for daily.",
+
+        ],
+        sample_success_gauges: [
+            "Reflect on your alignment with your core values and purpose through monthly self-assessments.",
+            "Record acts of kindness or contributions that align with your life purpose.",
+            "Track your purposed interaction with your church or your community.",
+            "Keep a journal of moments when you felt deeply connected to your spirituality.",
+            "Measure how often you experience inner peace, gratitude, or a sense of meaning.",
+            "Track the impact you’ve made in the lives of others through volunteering or mentorship.",
+
+        ],
     },
     {
         uid: "relationships-social-connection",
@@ -107,6 +158,21 @@ export const areas: Area[] = [
             "What kind of connections or relationships would make you feel truly fulfilled?",
             "Imagine hosting a gathering with your closest loved ones—what would it look and feel like?",
             "How can you bring more love, fun, and authenticity into your relationships?",
+        ],
+        sample_goals: [
+            "Schedule a date night with my partner every two weeks to reconnect.",
+            "Spend one-on-one time with each child weekly, focusing on their interests.",
+            "Reach out to a friend or family member weekly for a meaningful conversation.",
+            "Attend a local community event or social gathering each month to meet new people.",
+            "Volunteer for a cause that aligns with my values once per quarter.",
+
+        ],
+        sample_success_gauges: [
+            "Track interactions with friends or loved ones weekly or bi-weekly",
+            "Record how often you have intentional activities like date nights, family dinners, or social gatherings.",
+            "Keep a journal of moments when you felt deeply connected to someone important.",
+            "Assess how often you’ve expressed gratitude or appreciation to people in your life.",
+
         ],
     },
     {
@@ -135,6 +201,26 @@ export const areas: Area[] = [
             "What does a perfect day look like for your family?",
             "How can you support your partner and children in achieving their dreams?",
         ],
+        sample_goals: [
+            "Create a weekly family schedule to ensure quality time with each member.",
+            "Set aside 30 minutes daily for self-care activities as a parent.",
+            "Plan and cook family meals together every Sunday to bond.",
+            "Organize a monthly family outing or game day to strengthen bonds.",
+            "Establish a consistent bedtime routine for my kids that includes bonding activities like reading.",
+            "Volunteer with my child for a community project to teach compassion and responsibility.",
+            "Support my children’s education by dedicating time to help with schoolwork twice a week.",
+
+        ],
+        sample_success_gauges: [
+            "Log the frequency of family bonding activities, such as game nights, family dinners, outings, visits to family members",
+            "Reflect on your energy, patience, and overall satisfaction as a parent.",
+            "Reflect on the different roles you play in your family ( sibling, son/Daughter, parent) and Log deliverate interactions with your family members",
+            "Keep a journal of positive feedback or gratitude from your family about your efforts.",
+            "Track your children’s milestones, emotional growth, or academic progress.",
+            "Log how often you’ve had teachable moments or meaningful conversations with your kids or your parents",
+            "Measure the time you spend supporting your children’s education, hobbies, or emotional needs.",
+
+        ],
     },
     {
         uid: "personal-growth-education",
@@ -160,6 +246,23 @@ export const areas: Area[] = [
             "How would your life look if you became the best version of yourself?",
             "What inspires you to grow, and how can you bring more of that into your life?",
             "If you had unlimited time and resources, what would you dedicate yourself to learning or improving?",
+        ],
+        sample_goals: [
+            "Read one personal development book per month and implement one takeaway.",
+            "Enroll in an online course to develop a skill I’ve always wanted to learn (e.g., public speaking, coding).",
+            "Listen to a podcast or watch Youtube for learning purpose.",
+            "Practice daily affirmations to reinforce positive self-beliefs.",
+            "Dedicate 15 minutes a day to learning a new language or hobby.",
+
+        ],
+        sample_success_gauges: [
+            "Track progress on specific personal goals, such as completing a course or learning a skill.",
+            "Log the time spent on growth activities like reading, journaling, or practicing new skills.",
+            "Reflect on how often you’ve stepped out of your comfort zone to grow.",
+            "Assess how frequently you apply newly acquired knowledge or skills in daily life.",
+            "Keep a journal of mindset shifts or changes in confidence levels.",
+            "Track how often you challenge yourself with new learning opportunities or self-development tasks.",
+
         ],
     },
     {
@@ -187,6 +290,21 @@ export const areas: Area[] = [
             "What creative projects or hobbies would you pursue if there were no limitations?",
             "If your life were a highlight reel of fun and excitement, what would it include?",
         ],
+        sample_goals: [
+            "Schedule one family or personal trip every six months to explore new places.",
+            "Dedicate an hour each week to a creative hobby like painting, photography, or music.",
+            "Create a weekend bucket list and complete one fun activity per month.",
+            "Organize a family game or movie night every week.",
+            "Spend a day unplugged from technology each month to focus on relaxation and joy.",
+
+        ],
+        sample_success_gauges: [
+            "Track the number of new hobbies, adventures, or creative projects started or completed.",
+            "Log the time spent on leisure or creative activities weekly or monthly.",
+            "Reflect on your overall joy and relaxation levels and how frequently you feel recharged",
+            "Count the number of new and exciting experiences you’ve tried (e.g., travel, classes).",
+            "Record participation in shared fun activities with friends or family.",
+        ],
     },
     {
         uid: "physical-environment",
@@ -212,6 +330,23 @@ export const areas: Area[] = [
             "What changes would make your home a sanctuary of peace and relaxation?",
             "How can you make your physical space align better with your values and lifestyle?",
             "What is one thing you can add or remove from your environment to bring more joy?",
+        ],
+        sample_goals: [
+            "Declutter one room in my home each week until the entire house is organized.",
+            "Add a plant or decor element to my workspace to make it more inviting.",
+            "Schedule a deep cleaning of the house every season.",
+            "Create a designated workspace free from distractions.",
+            "Implement a daily 10-minute tidy-up routine to maintain an organized home.",
+
+        ],
+        sample_success_gauges: [
+            "Track the completion of organizational or decluttering tasks in your office or home",
+            "Reflect on how often your environment feels calming, productive, or inspiring.",
+            "Log the number of improvements or changes made to your living or working space.",
+            "Measure how much time you spend enjoying or using spaces you’ve enhanced.",
+            "Monitor how changes in your physical environment positively impact your mood or productivity.",
+            "Track whether your physical space aligns better with your values, such as sustainability, creativity, simplicity etc",
+
         ],
     },
     {
@@ -239,6 +374,23 @@ export const areas: Area[] = [
             "If you were a role model in your community, what would you want to be known for?",
             "What legacy do you want to leave through your contributions to others?",
         ],
+        sample_goals: [
+            "Volunteer for a local charity or cause at least once a month.",
+            "Mentor one person in my community or professional field this year.",
+            "Attend or host a community event quarterly to foster connections.",
+            "Donate [specific amount] to a nonprofit organization I care about each month.",
+            "Advocate for a social cause by signing petitions, attending events, or spreading awareness.",
+
+        ],
+        sample_success_gauges: [
+            "Log hours spent volunteering or contributing to community projects.",
+            "Track feedback, testimonials, or gratitude received from those you’ve helped.",
+            "Reflect on moments when you’ve felt fulfilled or proud of your contributions.",
+            "Measure the number of new connections built through community involvement.",
+            "Record the consistency of your participation in events, initiatives, or advocacy.",
+            "Track the tangible impact of your contributions on your community or causes.",
+
+        ],
     },
     {
         uid: "career-work",
@@ -264,6 +416,23 @@ export const areas: Area[] = [
             "How would you like to feel at the end of each workday?",
             "What professional challenge or goal excites you the most right now?",
             "If success was guaranteed, what bold career move would you make today?",
+        ],
+        sample_goals: [
+            "Attend one professional conference or networking event per quarter to expand my connections.",
+            "Complete an online certification course relevant to my career by [specific date].",
+            "Dedicate 1 hour per week to brainstorming innovative ideas for work or business.",
+            "Schedule weekly time blocks for uninterrupted deep work to improve productivity.",
+            "Identify and reach out to a mentor or coach within the next month for guidance in my career.",
+
+        ],
+        sample_success_gauges: [
+            "Track milestones achieved, such as promotions, certifications, or new projects.",
+            "Monitor feedback from supervisors, peers, or clients about your performance and impact.",
+            "Measure productivity and effectiveness using professional tools at work (time logs, project logs etc)",
+            "Count the number of new opportunities, challenges, or leadership roles you’ve embraced.",
+            "Measure your professional network growth by tracking connections made or relationships strengthened.",
+            "Reflect on the balance between feeling accomplished and maintaining work-life harmony.",
+
         ],
     },
     {
@@ -291,6 +460,23 @@ export const areas: Area[] = [
             "If you achieved everything you wanted in your business, what would your life look like?",
             "What bold or innovative ideas are you excited to bring to life in your business?",
         ],
+        sample_goals: [
+            "Set quarterly goals for my business and review progress monthly.",
+            "Dedicate 2 hours weekly to researching market trends and new opportunities.",
+            "Join an entrepreneur networking group or mastermind to share ideas and challenges.",
+            "Schedule a weekly “vision hour” to strategize long-term business goals.",
+            "Automate or delegate one task each month to focus on higher-level business priorities.",
+
+        ],
+        sample_success_gauges: [
+            "Track business growth metrics such as revenue, customer acquisition, or product launches.",
+            "Measure your efficiency by evaluating time on high-impact versus low-impact tasks to improve efficiency.",
+            "Gauge personal satisfaction and alignment with your entrepreneurial vision through regular reflection.",
+            "Track the number of creative ideas implemented or challenges successfully overcome.",
+            "Assess progress toward business goals or KPIs (Key Performance Indicators).",
+            "Measure how effectively you balance entrepreneurial responsibilities with personal life.",
+
+        ],
     },
     {
         uid: "finances",
@@ -315,6 +501,21 @@ export const areas: Area[] = [
             "What would it look like to have complete control and confidence over your financial future?",
             "How would you use wealth to create meaningful experiences for yourself and others?",
             "Imagine your ideal financial situation five years from now—what does it include?",
+        ],
+        sample_goals: [
+            "Create a monthly budget and review spending habits weekly to stay on track.",
+            "Set up an automatic savings plan to save [specific amount] every month.",
+            "Pay off [specific amount of debt] by [specific date] using a debt repayment strategy.",
+            "Invest in a diversified portfolio by opening an account with [investment platform].",
+            "Allocate 5% of my income to charitable contributions or causes I care about.",
+
+        ],
+        sample_success_gauges: [
+            "Track savings, debt reduction, or investment growth against monthly and annual targets.",
+            "Monitor budget Monthly.",
+            "Measure how close you are to achieving financial milestones, such as buying a home, buying a car, or building an emergency fund.",
+            "Track how often you review and adjust your financial plan to align with goals.",
+            "Assess whether you feel financial stability",
         ],
     },
 ];
