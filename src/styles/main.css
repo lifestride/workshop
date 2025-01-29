@@ -67,3 +67,7 @@ button.back::before {
 .card {
     @apply p-4 rounded-lg;
 }
+
+.card > h4 {
+    @apply mb-3 text-center;
+}

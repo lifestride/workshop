@@ -15,11 +15,11 @@
 }
 
 .prose h4 {
-    @apply mb-1 text-lg font-bold;
+    @apply mb-1 text-lg font-semibold;
 }
 
 .prose p {
-    @apply my-4;
+    @apply my-2;
 }
 
 .prose a {
