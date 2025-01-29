@@ -11,6 +11,7 @@
     import SelfAssessmentStep from "./steps/self-assessment.svelte";
     import VisionStep         from "./steps/vision.svelte";
     import GoalsIntroStep     from "./steps/goals-introduction.svelte";
+    import GoalsStep          from "./steps/goals.svelte";
 
     const steps = [
         ReflectionStep,
@@ -20,6 +21,7 @@
         SelfAssessmentStep,
         VisionStep,
         GoalsIntroStep,
+        GoalsStep,
     ];
 
     const currentStep = persistentStore<number>("current-step", 1);
