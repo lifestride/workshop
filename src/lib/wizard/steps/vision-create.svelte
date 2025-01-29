@@ -14,6 +14,12 @@
 <article class="prose">
     <section>
         <h1>Create Your Vision</h1>
+        <p>
+            The&nbsp;next step would be&nbsp;for&nbsp;you to&nbsp;create a&nbsp;vision for&nbsp;what you want in&nbsp;each area of&nbsp;your
+            life. This should be&nbsp;something that inspires you.
+            In&nbsp;the&nbsp;grid below you will see some examples of&nbsp;people’s vision statements to&nbsp;spark your creativity.
+            You&nbsp;can use them and&nbsp;edit them to&nbsp;make them fit to&nbsp;your own areas.
+        </p>
         <p>Define a vision for each one of your areas.</p>
     </section>
 

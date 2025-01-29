@@ -9,7 +9,6 @@
     import WheelOfLife        from "./steps/wheel-of-life.svelte";
     import SelectAreasStep    from "./steps/areas-select.svelte";
     import SelfAssessmentStep from "./steps/self-assessment.svelte";
-    import VisionStep         from "./steps/vision.svelte";
     import CreateVisionStep   from "./steps/vision-create.svelte";
     import GoalSettingStep    from "./steps/goal-setting.svelte";
 
@@ -19,7 +18,6 @@
         WheelOfLife,
         SelectAreasStep,
         SelfAssessmentStep,
-        VisionStep,
         CreateVisionStep,
         GoalSettingStep,
     ];
