@@ -35,8 +35,9 @@
     }
 </script>
 
-<Progress {steps} {currentStep} />
 <form>
+    <Navigation {steps} {currentStep} {navigate} />
+    <Progress {steps} {currentStep} />
     <Step />
     <Navigation {steps} {currentStep} {navigate} />
 </form>

@@ -19,7 +19,7 @@ body > main article {
 }
 
 main > form > nav {
-    @apply py-2;
+    @apply flex justify-end gap-2 py-2;
 }
 
 main > form > nav > button {
