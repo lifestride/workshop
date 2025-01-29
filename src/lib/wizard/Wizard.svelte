@@ -7,7 +7,7 @@
     import ReflectionStep     from "./steps/reflection.svelte";
     import AreasIntroStep     from "./steps/areas-introduction.svelte";
     import WheelOfLife        from "./steps/wheel-of-life.svelte";
-    import SelectAreasStep    from "./steps/areas-select.svelte";
+    import AreasStep          from "./steps/areas.svelte";
     import SelfAssessmentStep from "./steps/self-assessment.svelte";
     import VisionStep         from "./steps/vision.svelte";
     import GoalsIntroStep     from "./steps/goals-introduction.svelte";
@@ -16,7 +16,7 @@
         ReflectionStep,
         AreasIntroStep,
         WheelOfLife,
-        SelectAreasStep,
+        AreasStep,
         SelfAssessmentStep,
         VisionStep,
         GoalsIntroStep,
