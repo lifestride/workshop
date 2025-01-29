@@ -9,7 +9,7 @@
     import WheelOfLife        from "./steps/wheel-of-life.svelte";
     import SelectAreasStep    from "./steps/areas-select.svelte";
     import SelfAssessmentStep from "./steps/self-assessment.svelte";
-    import CreateVisionStep   from "./steps/vision-create.svelte";
+    import VisionStep         from "./steps/vision.svelte";
     import GoalSettingStep    from "./steps/goal-setting.svelte";
 
     const steps = [
@@ -18,7 +18,7 @@
         WheelOfLife,
         SelectAreasStep,
         SelfAssessmentStep,
-        CreateVisionStep,
+        VisionStep,
         GoalSettingStep,
     ];
 

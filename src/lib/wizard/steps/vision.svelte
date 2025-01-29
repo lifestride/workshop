@@ -12,8 +12,9 @@
 </script>
 
 <article class="prose">
+    <h1>Vision</h1>
+
     <section>
-        <h1>Create Your Vision</h1>
         <p>
             The&nbsp;next step would be&nbsp;for&nbsp;you to&nbsp;create a&nbsp;vision for&nbsp;what you want in&nbsp;each area of&nbsp;your
             life. This should be&nbsp;something that inspires you.
