@@ -5,21 +5,21 @@
     import Progress   from "./Progress.svelte";
 
     import ReflectionStep     from "./steps/reflection.svelte";
-    import AreasStep          from "./steps/areas.svelte";
+    import AreasIntroStep     from "./steps/areas-introduction.svelte";
     import WheelOfLife        from "./steps/wheel-of-life.svelte";
     import SelectAreasStep    from "./steps/areas-select.svelte";
     import SelfAssessmentStep from "./steps/self-assessment.svelte";
     import VisionStep         from "./steps/vision.svelte";
-    import GoalSettingStep    from "./steps/goal-setting.svelte";
+    import GoalsIntroStep     from "./steps/goals-introduction.svelte";
 
     const steps = [
         ReflectionStep,
-        AreasStep,
+        AreasIntroStep,
         WheelOfLife,
         SelectAreasStep,
         SelfAssessmentStep,
         VisionStep,
-        GoalSettingStep,
+        GoalsIntroStep,
     ];
 
     const currentStep = persistentStore<number>("current-step", 1);
