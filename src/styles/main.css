@@ -3,18 +3,18 @@
 @import "./wysiwyg.css" layer(base);
 
 body {
-    @apply flex justify-center items-center min-h-screen bg-gray-100;
+    @apply flex justify-center items-start m-2 bg-gray-100;
 }
 
 body > main {
-    @apply w-3/4 max-w-5xl p-6 bg-white shadow-lg rounded-lg;
+    @apply w-full lg:max-w-5xl p-6 bg-white shadow-lg rounded-lg;
 }
 
 body > main > header {
     @apply text-lg;
 }
 
-body > main > article {
+body > main article {
     @apply max-w-full;
 }
 
