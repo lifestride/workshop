@@ -3,7 +3,7 @@
     import { areas }           from "$lib/data/areas";
     import type { Area }       from "$lib/model/Area";
 
-    const selectedAreas = persistentStore("selected-areas", []);
+    const selectedAreas = persistentStore<string[]>("selected-areas", []);
 
     function isSelected(area: Area): boolean {
         return $selectedAreas.includes(area.uid);

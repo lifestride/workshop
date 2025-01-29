@@ -4,7 +4,7 @@
     import type { Area }       from "$lib/model/Area";
     import { persistentStore } from "$lib/persistentStore";
 
-    const selectedAreas = persistentStore("selected-areas", []);
+    const selectedAreas = persistentStore<string[]>("selected-areas", []);
 
     function isSelected(area: Area): boolean {
         return $selectedAreas.includes(area.uid);

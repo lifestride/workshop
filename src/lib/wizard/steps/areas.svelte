@@ -2,7 +2,7 @@
     import { persistentStore } from "$lib/persistentStore";
     import { areas }           from "$lib/data/areas";
 
-    const selectedAreas = persistentStore("selected-areas", []);
+    const selectedAreas = persistentStore<string[]>("selected-areas", []);
 </script>
 
 <article class="prose">
