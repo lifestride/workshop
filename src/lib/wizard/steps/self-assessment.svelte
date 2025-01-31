@@ -1,7 +1,7 @@
 <script lang="ts">
     import { persistentStore } from "$lib/persistentStore";
+    import type Area           from "$lib/model/Area";
     import { areas }           from "$lib/data/areas";
-    import type { Area }       from "$lib/model/Area";
 
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
 

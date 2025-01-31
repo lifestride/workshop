@@ -1,8 +1,8 @@
 <script lang="ts">
     import { onMount, onDestroy } from "svelte";
-    import ApexCharts             from "apexcharts";
     import { areas }              from "$lib/data/areas";
-    import type { Area }          from "$lib/model/Area";
+    import type Area              from "$lib/model/Area";
+    import ApexCharts             from "apexcharts";
 
     let chartContainerElement: HTMLElement;
     let chart: ApexCharts;

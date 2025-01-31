@@ -1,4 +1,4 @@
-export interface Area {
+export default interface Area {
     uid: string;
     name: string;
     description: string;

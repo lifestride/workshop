@@ -1,8 +1,8 @@
 <script lang="ts">
-    import RichTextEditor      from "$lib/components/RichTextEditor.svelte";
-    import { areas }           from "$lib/data/areas";
-    import type { Area }       from "$lib/model/Area";
     import { persistentStore } from "$lib/persistentStore";
+    import type Area           from "$lib/model/Area";
+    import { areas }           from "$lib/data/areas";
+    import RichTextEditor      from "$lib/components/RichTextEditor.svelte";
 
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
 
