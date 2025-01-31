@@ -1,5 +1,5 @@
 <script lang="ts">
-    import TiptapEditor        from "$lib/components/TiptapEditor.svelte";
+    import RichTextEditor      from "$lib/components/RichTextEditor.svelte";
     import { persistentStore } from "$lib/persistentStore";
     import { areas }           from "$lib/data/areas";
     import type { Area }       from "$lib/model/Area";
@@ -48,11 +48,11 @@
 
                 <div class="card">
                     <h4>Your Vision</h4>
-                    <TiptapEditor />
+                    <RichTextEditor />
                 </div>
                 <div class="card">
                     <h4>Your Big Why</h4>
-                    <TiptapEditor />
+                    <RichTextEditor />
                 </div>
             </section>
         {/if}

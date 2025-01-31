@@ -1,5 +1,5 @@
 <script lang="ts">
-    import TiptapEditor        from "$lib/components/TiptapEditor.svelte";
+    import RichTextEditor      from "$lib/components/RichTextEditor.svelte";
     import { persistentStore } from "$lib/persistentStore";
 
     const content = persistentStore<string>("areas-of-life", "");
@@ -25,6 +25,6 @@
     <section>
         <h3>Activity</h3>
         <p>Reflect on what you are spending most of your time right now.</p>
-        <TiptapEditor {content} {update} />
+        <RichTextEditor {content} {update} />
     </section>
 </article>

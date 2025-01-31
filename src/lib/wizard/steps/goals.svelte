@@ -1,5 +1,5 @@
 <script lang="ts">
-    import TiptapEditor        from "$lib/components/TiptapEditor.svelte";
+    import RichTextEditor      from "$lib/components/RichTextEditor.svelte";
     import { areas }           from "$lib/data/areas";
     import type { Area }       from "$lib/model/Area";
     import { persistentStore } from "$lib/persistentStore";
@@ -29,32 +29,32 @@
 
                 <div class="card bg-neutral-100">
                     <h4 class="m-0">Big 3 Annual Goals</h4>
-                    <TiptapEditor />
+                    <RichTextEditor />
                 </div>
 
                 <div class="card bg-neutral-100">
                     <h4 class="m-0">Q1 Key Milestones</h4>
-                    <TiptapEditor />
+                    <RichTextEditor />
                 </div>
 
                 <div class="card bg-neutral-100">
                     <h4 class="m-0">Q2 Key Milestones</h4>
-                    <TiptapEditor />
+                    <RichTextEditor />
                 </div>
 
                 <div class="card bg-neutral-100">
                     <h4 class="m-0">Q3 Key Milestones</h4>
-                    <TiptapEditor />
+                    <RichTextEditor />
                 </div>
 
                 <div class="card bg-neutral-100">
                     <h4 class="m-0">Q4 Key milestones</h4>
-                    <TiptapEditor />
+                    <RichTextEditor />
                 </div>
 
                 <div class="card bg-neutral-100">
                     <h4 class="m-0">Gauge for Success</h4>
-                    <TiptapEditor />
+                    <RichTextEditor />
                 </div>
 
                 <div class="card bg-neutral-100">

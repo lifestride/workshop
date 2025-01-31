@@ -1,5 +1,5 @@
 <script lang="ts">
-    import TiptapEditor        from "$lib/components/TiptapEditor.svelte";
+    import RichTextEditor      from "$lib/components/RichTextEditor.svelte";
     import { persistentStore } from "$lib/persistentStore";
 
     const content = persistentStore<string>("reflection", "");
@@ -23,6 +23,6 @@
     <section>
         <h3>Activity</h3>
         <p>Reflect on&nbsp;your previous year and&nbsp;note some noteworthy events.</p>
-        <TiptapEditor {content} {update} />
+        <RichTextEditor {content} {update} />
     </section>
 </article>
