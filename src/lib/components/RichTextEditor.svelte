@@ -7,17 +7,13 @@
     import Placeholder            from "@tiptap/extension-placeholder";
     import BubbleMenu             from "@tiptap/extension-bubble-menu";
 
-    let { content, update } = $props();
+    type UpdateCallback = (editor: Editor) => void;
 
-    let containerElement: HTMLElement;
+    let { content = $bindable(), update }: { content: string, update?: UpdateCallback } = $props();
+
+    let element: HTMLElement;
     let bubbleMenuElement: HTMLElement;
     let editor: Editor;
-
-    if (content) {
-        content.subscribe((value: string) => {
-            if (editor?.isEmpty) editor?.commands.setContent(value);
-        });
-    }
 
     onMount(() => {
         const extensions = [
@@ -43,23 +39,28 @@
         };
 
         editor = new Editor({
-            element: containerElement,
-            extensions: extensions,
-            editorProps: editorProps,
-            content: $content,
+            element,
+            extensions,
+            editorProps,
+            content,
             onUpdate: ({ editor }) => {
-                if (update) update(editor.getHTML());
+                content = editor.getHTML();
+                if (update) update(editor);
             },
-            onTransaction: () => { // force re-render so `editor.isActive` works as expected
-                editor = editor;
+            onTransaction: () => {
+                editor = editor; // force re-render so `editor.isActive` works as expected
             },
+        });
+
+        $effect(() => {
+            if (editor?.isEmpty) editor?.commands.setContent(content);
         });
     });
 
     onDestroy(() => {
-        if (editor) editor.destroy();
+        editor?.destroy();
     });
 </script>
 
-<div bind:this={containerElement} class="wysiwyg"></div>
+<div bind:this={element} class="wysiwyg"></div>
 <div bind:this={bubbleMenuElement} class="wysiwyg-bubble-menu"></div>

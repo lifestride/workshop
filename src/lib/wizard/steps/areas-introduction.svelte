@@ -3,10 +3,6 @@
     import { persistentStore } from "$lib/persistentStore";
 
     const content = persistentStore<string>("areas-of-life", "");
-
-    const update = (value: string) => {
-        content.set(value);
-    };
 </script>
 
 <article class="prose">
@@ -25,6 +21,6 @@
     <section>
         <h3>Activity</h3>
         <p>Reflect on what you are spending most of your time right now.</p>
-        <RichTextEditor {content} {update} />
+        <RichTextEditor bind:content="{$content}" />
     </section>
 </article>

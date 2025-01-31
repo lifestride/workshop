@@ -3,10 +3,6 @@
     import { persistentStore } from "$lib/persistentStore";
 
     const content = persistentStore<string>("reflection", "");
-
-    const update = (value: string) => {
-        content.set(value);
-    };
 </script>
 
 <article class="prose">
@@ -23,6 +19,6 @@
     <section>
         <h3>Activity</h3>
         <p>Reflect on&nbsp;your previous year and&nbsp;note some noteworthy events.</p>
-        <RichTextEditor {content} {update} />
+        <RichTextEditor bind:content="{$content}" />
     </section>
 </article>
