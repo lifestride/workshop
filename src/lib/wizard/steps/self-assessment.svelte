@@ -1,13 +1,10 @@
 <script lang="ts">
-    import { persistentStore } from "$lib/persistentStore";
-    import type Area           from "$lib/model/Area";
     import { areas }           from "$lib/data/areas";
+    import type Area           from "$lib/model/Area";
+    import { persistentStore } from "$lib/persistentStore";
 
+    const groupedAreas = new Map<string, Area>(areas.map(area => [area.uid, area]));
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
-
-    function isSelected(area: Area): boolean {
-        return $selectedAreas.includes(area.uid);
-    }
 </script>
 
 <article class="prose">
@@ -20,17 +17,16 @@
         </p>
     </section>
     <section class="two-cols">
-        {#each areas as area}
-            {#if isSelected(area)}
-                <section class="card bg-neutral-100">
-                    <h4 class="mt-0">{area.name}</h4>
-                    <ul>
-                        {#each area.assessment as question}
-                            <li>{question}</li>
-                        {/each}
-                    </ul>
-                </section>
-            {/if}
+        {#each $selectedAreas as areaUid}
+            {@const area = groupedAreas.get(areaUid)!}
+            <section class="card bg-neutral-100">
+                <h4 class="mt-0">{area.name}</h4>
+                <ul>
+                    {#each area.assessment as question}
+                        <li>{question}</li>
+                    {/each}
+                </ul>
+            </section>
         {/each}
     </section>
     <section>
