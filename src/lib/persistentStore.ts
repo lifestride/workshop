@@ -1,6 +1,6 @@
-import { writable }      from "svelte/store";
-import type { Writable } from "svelte/store";
 import localforage       from "localforage";
+import type { Writable } from "svelte/store";
+import { writable }      from "svelte/store";
 
 const localStore = localforage.createInstance({
     name: "workshop",
@@ -11,8 +11,8 @@ interface PersistentStore<T> extends Writable<T> {
     remove: () => void;
 }
 
-export function persistentStore<T>(key: string, initialValue: T): PersistentStore<T> {
-    const {subscribe, set, update} = writable(initialValue);
+export function persistentStore<T>(key: string, initialValue?: T): PersistentStore<T> {
+    const { subscribe, set, update } = writable(initialValue);
 
     type Mutator = (value: T) => T;
 
@@ -41,7 +41,9 @@ export function persistentStore<T>(key: string, initialValue: T): PersistentStor
         remove: () => {
             // Remove from local storage and reset to initial value
             localStore.removeItem(key)
-                .then(() => set(initialValue))
+                .then(() => {
+                    if (initialValue) set(initialValue);
+                })
                 .catch(console.error);
         },
     };
