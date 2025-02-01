@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { onMount, onDestroy } from "svelte";
     import { areas }              from "$lib/data/areas";
     import type Area              from "$lib/model/Area";
     import ApexCharts             from "apexcharts";
+    import { onDestroy, onMount } from "svelte";
 
     let chartContainerElement: HTMLElement;
     let chart: ApexCharts;
@@ -22,8 +22,8 @@
         },
         plotOptions: {
             pie: {
-                expandOnClick: false
-            }
+                expandOnClick: false,
+            },
         },
     };
 
