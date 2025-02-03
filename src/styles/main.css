@@ -7,7 +7,7 @@ body {
 }
 
 body > main {
-    @apply w-full lg:max-w-5xl p-6 bg-white shadow-lg rounded-lg;
+    @apply w-full lg:max-w-5xl p-6 bg-white not-print:shadow-lg not-print:rounded-lg;
 }
 
 body > main > header {
