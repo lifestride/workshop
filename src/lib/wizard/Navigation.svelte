@@ -1,21 +1,11 @@
 <script lang="ts">
     let { steps, currentStep, navigate } = $props();
 
-    function isAtFirstStep() {
-        return $currentStep === 1;
-    }
+    const isAtFirstStep = () => ($currentStep === 1);
+    const isAtLastStep = () => ($currentStep === steps.length);
 
-    function isAtLastStep() {
-        return $currentStep === steps.length;
-    }
-
-    function previous() {
-        navigate($currentStep - 1);
-    }
-
-    function next() {
-        navigate($currentStep + 1);
-    }
+    const previous = () => navigate($currentStep - 1);
+    const next = () => navigate($currentStep + 1);
 </script>
 
 <nav>
