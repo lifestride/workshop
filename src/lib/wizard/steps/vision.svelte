@@ -28,12 +28,16 @@
 
     <section>
         <p>
-            The&nbsp;next step would be&nbsp;for&nbsp;you to&nbsp;create a&nbsp;vision for&nbsp;what you want in&nbsp;each area of&nbsp;your
-            life. This should be&nbsp;something that inspires you.
-            In&nbsp;the&nbsp;grid below you will see some examples of&nbsp;people’s vision statements to&nbsp;spark your creativity.
-            You&nbsp;can use them and&nbsp;edit them to&nbsp;make them fit to&nbsp;your own areas.
+            The&nbsp;next step is&nbsp;to&nbsp;create a&nbsp;vision for&nbsp;what you want in&nbsp;each area of&nbsp;your life.
+            This should be&nbsp;something that inspires you.
+            We&nbsp;are providing prompt questions and&nbsp;examples of&nbsp;other people’s vision statements to&nbsp;spark your creativity.
+            In&nbsp;your Big Why, write down the&nbsp;reasons why you <em>must</em> succeed in&nbsp;this area.
         </p>
-        <p>Define a vision for each one of your areas.</p>
+    </section>
+    <section>
+        <h3>Activity</h3>
+
+        <p>Define a&nbsp;vision for&nbsp;each one of&nbsp;your areas and&nbsp;add your Big Why.</p>
     </section>
 
     {#each $selectedAreas as areaUid}

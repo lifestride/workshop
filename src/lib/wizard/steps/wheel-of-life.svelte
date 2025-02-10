@@ -45,6 +45,7 @@
             and&nbsp;structure their lives to&nbsp;achieve balance.
             It&nbsp;assists in&nbsp;identifying areas that require more focus and&nbsp;improvement.
         </p>
+        <p>See below an&nbsp;example of&nbsp;a&nbsp;Wheel of&nbsp;Life:</p>
     </section>
     <div bind:this={chartContainerElement} id="wheel-of-life"></div>
 </article>

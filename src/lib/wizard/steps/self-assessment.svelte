@@ -41,6 +41,16 @@
             The blocks below provide questions for that would prompt some of your thinking to help you on an initial reflection.
         </p>
     </section>
+    <section>
+        <h3>Activity</h3>
+
+        <p>Score your areas from&nbsp;0 to&nbsp;10, where:</p>
+        <ul>
+            <li>0&nbsp;being, you are&nbsp;not doing any of&nbsp;the&nbsp;items in&nbsp;the&nbsp;examples.</li>
+            <li>10&nbsp;being, you are&nbsp;doing all of&nbsp;them and&nbsp;on&nbsp;top of&nbsp;this area.</li>
+        </ul>
+        <p>Later you will have the&nbsp;chance to&nbsp;create your own gauge for&nbsp;success.</p>
+    </section>
     <section class="two-cols">
         {#each $selectedAreas as areaUid}
             {@const area = groupedAreas.get(areaUid)!}
@@ -53,19 +63,17 @@
                     {/each}
                 </ul>
 
-                <p>Give yourself a score:</p>
-                <input
-                    type="range" min="0" max="10" step="1" class="w-full"
-                    bind:value={
-                        () => getAssignmentValue(area),
-                        (v) => setAssignmentValue(area, v)
-                    }
-                />
+                <div class="slider">
+                    <p>Give yourself a score:</p>
+                    <input
+                        type="range" min="0" max="10" step="1" class="w-full"
+                        bind:value={
+                            () => getAssignmentValue(area),
+                            (v) => setAssignmentValue(area, v)
+                        }
+                    />
+                </div>
             </section>
         {/each}
-    </section>
-    <section>
-        <h3>Activity</h3>
-        <p>Write down your areas and score them from&nbsp;1 to&nbsp;10, where 1&nbsp;is&nbsp;the&nbsp;lowest and&nbsp;10 is&nbsp;the&nbsp;highest.</p>
     </section>
 </article>
