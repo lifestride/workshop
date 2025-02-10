@@ -1,0 +1,7 @@
+.slider input[type="range"] {
+    @apply w-full;
+}
+
+.slider output {
+    @apply block w-full text-center;
+}

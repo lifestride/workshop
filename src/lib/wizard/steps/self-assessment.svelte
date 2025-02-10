@@ -11,9 +11,14 @@
 
     const predicate = (uid: string) => (goal: AreaGoals) => goal.areaUid === uid;
 
+    const getCurrentValue = (area: Area) => {
+        const value = $derived($goals.find(predicate(area.uid))?.assessment ?? 0);
+        return value;
+    }
+
     const getAssignmentValue = (area: Area) => {
-        const value = $derived($goals.find(predicate(area.uid))?.assessment);
-        setAssignmentValue(area, value!);
+        const value = getCurrentValue(area);
+        setAssignmentValue(area, value);
         return value;
     };
 
@@ -66,12 +71,13 @@
                 <div class="slider">
                     <p>Give yourself a score:</p>
                     <input
-                        type="range" min="0" max="10" step="1" class="w-full"
+                        type="range" min="0" max="10" step="1"
                         bind:value={
                             () => getAssignmentValue(area),
                             (v) => setAssignmentValue(area, v)
                         }
                     />
+                    <output>{getCurrentValue(area)} / 10</output>
                 </div>
             </section>
         {/each}
