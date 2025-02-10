@@ -31,6 +31,16 @@
             <header class="card">{area.name}</header>
 
             <div class="card bg-neutral-100">
+                <h4 class="m-0">Your Vision</h4>
+                {@html groupedGoals[area.uid].vision}
+            </div>
+
+            <div class="card bg-neutral-100">
+                <h4 class="m-0">Your Big Why</h4>
+                {@html groupedGoals[area.uid].purpose}
+            </div>
+
+            <div class="card bg-neutral-100">
                 <h4 class="mt-0">Goal and Milestone Examples</h4>
                 <ul>
                     {#each area.sample_goals as goal}
