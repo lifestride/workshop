@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "./base.css" layer(base);
+@import "./prose.css" layer(base);
 @import "./layout.css" layer(components);
 @import "./forms.css" layer(components);
 @import "./wysiwyg.css" layer(components);
