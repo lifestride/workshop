@@ -4,6 +4,7 @@
     import type AreaGoals      from "$lib/model/AreaGoals";
     import { persistentStore } from "$lib/persistentStore";
     import { onMount }         from "svelte";
+    import "./print.css";
 
     const groupedAreas = new Map<string, Area>(areas.map(area => [area.uid, area]));
 
@@ -19,12 +20,6 @@
         }, 1000);
     });
 </script>
-
-<style>
-    article section + section {
-        margin: 2rem 0;
-    }
-</style>
 
 <article class="prose">
     <h1>Your Summary</h1>
