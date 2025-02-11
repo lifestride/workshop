@@ -17,11 +17,11 @@
     </section>
 
     <section class="two-cols">
-        <header class="card">Health and Fitness</header>
+        <header class="card wide">Health and Fitness</header>
 
-        <div class="card bg-blue-100 col-span-2">
-            <h4 class="m-0">Big 3 Annual Goals</h4>
-            <ul class="m-0">
+        <div class="card wide bg-blue-100">
+            <h4>Big 3 Annual Goals</h4>
+            <ul>
                 <li>Maintain a healthy weight and visible muscle tone throughout the year. 15% BF Dexa Scans.</li>
                 <li>Run three races (e.g., 5K or 10K) injury-free throughout the year.</li>
                 <li>Adopt and sustain a clean and balanced nutrition plan- Mostly Paleo and Meet Daily protein.</li>
@@ -29,8 +29,8 @@
         </div>
 
         <div class="card bg-green-100">
-            <h4 class="m-0">Q1 Key Milestones</h4>
-            <ul class="m-0">
+            <h4>Q1 Key Milestones</h4>
+            <ul>
                 <li>Baseline Dexa scans and Initial doctor visits, Progress photos</li>
                 <li>Start running program focusing on Endurance</li>
                 <li>Consistently start tracking food intake, track Macros</li>
@@ -38,8 +38,8 @@
         </div>
 
         <div class="card bg-yellow-100">
-            <h4 class="m-0">Q2 Key Milestones</h4>
-            <ul class="m-0">
+            <h4>Q2 Key Milestones</h4>
+            <ul>
                 <li>Try out HIIT Cardio. Dexa Scan - 2%.</li>
                 <li>Schedule Race for this quarter (5k)</li>
                 <li>Refine Meal plan- Focus on whole foods</li>
@@ -47,8 +47,8 @@
         </div>
 
         <div class="card bg-red-100">
-            <h4 class="m-0">Q3 Key Milestones</h4>
-            <ul class="m-0">
+            <h4>Q3 Key Milestones</h4>
+            <ul>
                 <li>Integrate yoga/Pilates to improve core strength and flexibility.</li>
                 <li>Train for longer races or incorporate trail runs</li>
                 <li>Continue to monitor Macros.</li>
@@ -56,17 +56,17 @@
         </div>
 
         <div class="card bg-purple-100">
-            <h4 class="m-0">Q4 Key milestones</h4>
-            <ul class="m-0">
+            <h4>Q4 Key milestones</h4>
+            <ul>
                 <li>Final Race. Plan for recovery/maintenance program</li>
                 <li>Dexa Scan - 3%. Progress photos</li>
                 <li>Experiment new recipes. Mindful eating</li>
             </ul>
         </div>
 
-        <div class="card bg-lime-100 col-span-2">
-            <h4 class="m-0">Gauge for Success</h4>
-            <ul class="m-0">
+        <div class="card wide bg-lime-100">
+            <h4>Gauge for Success</h4>
+            <ul>
                 <li>Score 0: Poorly eating, no muscle tone, low energy.</li>
                 <li>Score 10: Visible muscle tone, running without injuries, free of major illness, nutrition mostly optimal.</li>
                 <li>Running logs; number of races completed.</li>

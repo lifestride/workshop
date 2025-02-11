@@ -43,7 +43,7 @@
     {#each $selectedAreas as areaUid}
         {@const area = groupedAreas.get(areaUid)!}
         <section class="two-cols">
-            <header class="card">{area.name}</header>
+            <header class="card wide">{area.name}</header>
 
             <div class="card bg-neutral-100">
                 <h4 class="mt-0">Questions</h4>

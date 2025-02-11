@@ -16,11 +16,15 @@ body > main article {
 }
 
 body > main article > section.two-cols {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-2;
+    @apply grid md:grid-cols-2 gap-2;
 }
 
-body > main article > section.two-cols > header {
-    @apply bg-zinc-100 !p-2 col-span-2 font-bold text-center
+body > main article > section.two-cols .wide {
+    @apply md:col-span-2 print:col-span-2;
+}
+
+body > main article > section > header {
+    @apply p-2 bg-stone-100 font-bold text-center;
 }
 
 body > main article > section + section {
@@ -55,10 +59,6 @@ button.next::after {
 button.back::before {
     content: '←';
     margin-right: 0.2rem;
-}
-
-.ql-editor {
-    height: 10rem !important;
 }
 
 .card {
