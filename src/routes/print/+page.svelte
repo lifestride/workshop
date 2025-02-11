@@ -52,6 +52,11 @@
                 </section>
 
                 <section class="wide">
+                    <h3 class="not-prose">Gauge for Success</h3>
+                    {@html goal.gauge ?? empty}
+                </section>
+
+                <section class="wide">
                     <h3 class="not-prose">Annual Goals</h3>
                     {@html goal.annual ?? empty}
                 </section>
@@ -74,11 +79,6 @@
                 <section>
                     <h3 class="not-prose">Q2 Milestones</h3>
                     {@html goal.q2 ?? empty}
-                </section>
-
-                <section class="wide">
-                    <h3 class="not-prose">Gauge for Success</h3>
-                    {@html goal.gauge ?? empty}
                 </section>
             </section>
         {/if}

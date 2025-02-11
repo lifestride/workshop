@@ -41,12 +41,26 @@
             </div>
 
             <div class="card bg-neutral-100">
+                <h4>Gauge for Success Examples</h4>
+                <ul>
+                    {#each area.sample_success_gauges as gauge}
+                        <li>{gauge}</li>
+                    {/each}
+                </ul>
+            </div>
+
+            <div class="card bg-neutral-100">
                 <h4>Goal and Milestone Examples</h4>
                 <ul>
                     {#each area.sample_goals as goal}
                         <li>{goal}</li>
                     {/each}
                 </ul>
+            </div>
+
+            <div class="card bg-neutral-100">
+                <h4>Gauge for Success</h4>
+                <RichTextEditor bind:content={groupedGoals[area.uid].gauge} update={createAreaGoalUpdater(goals, area, "gauge")} />
             </div>
 
             <div class="card bg-neutral-100">
@@ -74,19 +88,6 @@
                 <RichTextEditor bind:content={groupedGoals[area.uid].q4} update={createAreaGoalUpdater(goals, area, "q4")} />
             </div>
 
-            <div class="card bg-neutral-100">
-                <h4>Gauge for Success</h4>
-                <RichTextEditor bind:content={groupedGoals[area.uid].gauge} update={createAreaGoalUpdater(goals, area, "gauge")} />
-            </div>
-
-            <div class="card bg-neutral-100">
-                <h4>Gauge for Success Examples</h4>
-                <ul>
-                    {#each area.sample_success_gauges as gauge}
-                        <li>{gauge}</li>
-                    {/each}
-                </ul>
-            </div>
         </section>
     {/each}
 </article>

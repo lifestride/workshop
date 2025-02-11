@@ -19,6 +19,18 @@
     <section class="two-cols">
         <header class="card wide">Health and Fitness</header>
 
+        <div class="card wide bg-amber-100">
+            <h4>Gauge for Success</h4>
+            <ul>
+                <li>Score 0: Poorly eating, no muscle tone, low energy.</li>
+                <li>Score 10: Visible muscle tone, running without injuries, free of major illness, nutrition mostly optimal.</li>
+                <li>Running logs; number of races completed.</li>
+                <li>Food tracking; water intake.</li>
+                <li>Dexa scans every month or quarter.</li>
+                <li>Regular health check ups</li>
+            </ul>
+        </div>
+
         <div class="card wide bg-blue-100">
             <h4>Big 3 Annual Goals</h4>
             <ul>
@@ -28,7 +40,7 @@
             </ul>
         </div>
 
-        <div class="card bg-green-100">
+        <div class="card bg-red-100">
             <h4>Q1 Key Milestones</h4>
             <ul>
                 <li>Baseline Dexa scans and Initial doctor visits, Progress photos</li>
@@ -37,7 +49,7 @@
             </ul>
         </div>
 
-        <div class="card bg-yellow-100">
+        <div class="card bg-green-100">
             <h4>Q2 Key Milestones</h4>
             <ul>
                 <li>Try out HIIT Cardio. Dexa Scan - 2%.</li>
@@ -46,7 +58,7 @@
             </ul>
         </div>
 
-        <div class="card bg-red-100">
+        <div class="card bg-yellow-100">
             <h4>Q3 Key Milestones</h4>
             <ul>
                 <li>Integrate yoga/Pilates to improve core strength and flexibility.</li>
@@ -61,18 +73,6 @@
                 <li>Final Race. Plan for recovery/maintenance program</li>
                 <li>Dexa Scan - 3%. Progress photos</li>
                 <li>Experiment new recipes. Mindful eating</li>
-            </ul>
-        </div>
-
-        <div class="card wide bg-lime-100">
-            <h4>Gauge for Success</h4>
-            <ul>
-                <li>Score 0: Poorly eating, no muscle tone, low energy.</li>
-                <li>Score 10: Visible muscle tone, running without injuries, free of major illness, nutrition mostly optimal.</li>
-                <li>Running logs; number of races completed.</li>
-                <li>Food tracking; water intake.</li>
-                <li>Dexa scans every month or quarter.</li>
-                <li>Regular health check ups</li>
             </ul>
         </div>
     </section>
