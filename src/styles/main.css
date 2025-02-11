@@ -1,5 +1,9 @@
 @import "tailwindcss";
-@import "./prose.css" layer(base);
+
+@media screen {
+    @import "./prose.css" layer(base);
+}
+
 @import "./layout.css" layer(components);
 @import "./forms.css" layer(components);
 @import "./wysiwyg.css" layer(components);

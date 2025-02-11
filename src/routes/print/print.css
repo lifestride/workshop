@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
 article section + section {
-    margin: 2rem 0;
+    @apply my-1;
 }

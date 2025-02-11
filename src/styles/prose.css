@@ -1,39 +1,39 @@
-.prose {
+.prose:not(.print) {
     @apply font-sans;
 }
 
-.prose h1 {
+.prose:not(.print) h1 {
     @apply mb-4 text-3xl font-bold;
 }
 
-.prose h2 {
+.prose:not(.print) h2 {
     @apply mb-3 text-2xl font-bold;
 }
 
-.prose h3 {
+.prose:not(.print) h3 {
     @apply mb-2 text-xl font-bold;
 }
 
-.prose h4 {
+.prose:not(.print) h4 {
     @apply mb-1 text-lg font-semibold;
 }
 
-.prose p {
+.prose:not(.print) p {
     @apply my-2;
 }
 
-.prose a {
+.prose:not(.print) a {
     @apply text-blue-500 underline;
 }
 
-.prose ul {
+.prose:not(.print) ul {
     @apply pl-5 list-disc;
 }
 
-.prose ol {
+.prose:not(.print) ol {
     @apply pl-5 list-decimal;
 }
 
-.prose li {
+.prose:not(.print) li {
     @apply my-2;
 }
