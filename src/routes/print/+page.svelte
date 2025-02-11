@@ -21,54 +21,63 @@
     });
 </script>
 
-<article class="prose">
+<article class="prose print max-w-none">
     <h1>Your Summary</h1>
+
     {@html $reflection}
+
     {#each $goals as goal}
         {#if $selectedAreas.includes(goal.areaUid)}
             {@const area = groupedAreas.get(goal.areaUid)!}
-            <section>
-                <h2>{area.name}</h2>
+            <section class="area two-cols">
+                <header class="wide">
+                    <h2 class="not-prose">{area.name}</h2>
+                </header>
 
-                <p>Self-assessment: {goal.assessment}</p>
+                <section class="wide">
+                    <dl class="not-prose">
+                        <dt>Self-assessment</dt>
+                        <dd>{goal.assessment}</dd>
+                    </dl>
+                </section>
 
-                <section>
-                    <h3>Vision</h3>
+                <section class="wide">
+                    <h3 class="not-prose">Vision</h3>
                     {@html goal.vision ?? empty}
                 </section>
 
-                <section>
-                    <h3>Big Why</h3>
+                <section class="wide">
+                    <h3 class="not-prose">Big Why</h3>
                     {@html goal.purpose ?? empty}
                 </section>
 
-                <section>
-                    <h3>Annual Goals</h3>
+                <section class="wide">
+                    <h3 class="not-prose">Annual Goals</h3>
                     {@html goal.annual ?? empty}
                 </section>
 
                 <section>
-                    <h3>Q1 Milestones</h3>
+                    <h3 class="not-prose">Q1 Milestones</h3>
                     {@html goal.q1 ?? empty}
                 </section>
 
                 <section>
-                    <h3>Q2 Milestones</h3>
+                    <h3 class="not-prose">Q2 Milestones</h3>
                     {@html goal.q2 ?? empty}
                 </section>
 
                 <section>
-                    <h3>Q2 Milestones</h3>
+                    <h3 class="not-prose">Q2 Milestones</h3>
                     {@html goal.q2 ?? empty}
                 </section>
 
                 <section>
-                    <h3>Q2 Milestones</h3>
+                    <h3 class="not-prose">Q2 Milestones</h3>
                     {@html goal.q2 ?? empty}
                 </section>
 
-                <section>
-                    <h3>Gauge for Success</h3>
+                <section class="wide">
+                    <h3 class="not-prose">Gauge for Success</h3>
                     {@html goal.gauge ?? empty}
                 </section>
             </section>

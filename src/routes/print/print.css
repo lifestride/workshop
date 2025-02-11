@@ -1,6 +1,51 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-article section + section {
-    @apply my-1;
+@page {
+    padding: 1cm;
+}
+
+body {
+    @apply m-0 bg-white;
+}
+
+article section.area:not(:first-of-type) {
+    @apply break-before-page;
+}
+
+article section.area > header {
+    @apply border-2 border-neutral-200 bg-neutral-100 rounded-lg p-2;
+}
+
+article section.area > header h2 {
+    @apply font-bold text-center;
+}
+
+article section.area > section {
+    @apply border-2 border-neutral-200 rounded-lg p-2 break-inside-avoid;
+}
+
+article section.area h2,
+article section.area h3 {
+    @apply font-bold;
+}
+
+article.prose section > p:last-child {
+    @apply mb-0;
+}
+
+article.prose dl {
+    @apply flex gap-1 m-1;
+}
+
+article.prose dt {
+    @apply font-bold;
+}
+
+article.prose dt:after {
+    content: ":";
+}
+
+article.prose dd {
+    @apply ml-1;
 }
