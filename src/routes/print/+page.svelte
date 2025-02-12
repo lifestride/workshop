@@ -2,12 +2,14 @@
     import { areas }           from "$lib/data/areas";
     import type Area           from "$lib/model/Area";
     import type AreaGoals      from "$lib/model/AreaGoals";
+    import type User           from "$lib/model/User";
     import { persistentStore } from "$lib/persistentStore";
     import { onMount }         from "svelte";
     import "./print.css";
 
     const groupedAreas = new Map<string, Area>(areas.map(area => [area.uid, area]));
 
+    const user = persistentStore<User>("user", { firstName: "" });
     const reflection = persistentStore<string>("reflection", "");
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
     const goals = persistentStore<Array<AreaGoals>>("goals", []);
@@ -22,7 +24,7 @@
 </script>
 
 <article class="prose print max-w-none">
-    <h1>Your Summary</h1>
+    <h1>{$user.firstName}'s Summary</h1>
 
     {@html $reflection}
 
