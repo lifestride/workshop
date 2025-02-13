@@ -37,3 +37,10 @@
 .prose:not(.print) li {
     @apply my-2;
 }
+
+.prose:not(.print) dt {
+    @apply font-bold;
+}
+.prose:not(.print) dt:after {
+    content: ":";
+}
