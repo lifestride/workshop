@@ -1,7 +1,7 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
 
-    const summary = () => goto("./print");
+    const summary = () => goto("./summary");
 </script>
 
 <article class="prose">
