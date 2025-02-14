@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+    @apply w-screen h-screen;
+}
+
+body > main {
+    @apply p-0;
+    height: calc(100% - var(--spacing) * 2 * 2);
+}
+
+body > main > iframe {
+    @apply w-full h-full border-none rounded-lg;
+}

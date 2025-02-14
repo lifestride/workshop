@@ -1,10 +1,9 @@
-
 body {
     @apply flex justify-center items-start not-print:bg-gray-100;
 }
 
 body > main {
-    @apply w-full lg:max-w-5xl not-print:m-2 not-print:p-6 bg-white not-print:shadow-lg not-print:rounded-lg;
+    @apply w-full lg:max-w-5xl not-print:m-2 not-print:p-6 not-print:rounded-lg bg-white not-print:shadow-lg;
 }
 
 body > main > header {
