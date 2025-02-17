@@ -25,6 +25,19 @@
                 expandOnClick: false,
             },
         },
+        responsive: [
+            {
+                breakpoint: 500,
+                options: {
+                    chart: {
+                        height: 500,
+                    },
+                    legend: {
+                        position: "bottom",
+                    },
+                },
+            },
+        ],
     };
 
     onMount(() => {
