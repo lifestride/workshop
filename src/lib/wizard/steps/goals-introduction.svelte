@@ -2,7 +2,7 @@
 </script>
 
 <article class="prose">
-    <h1>Goal Setting and Action Plans</h1>
+    <h1>Goal Setting and&nbsp;Action Plans</h1>
     <section>
         <p>
             Congratulations, you have already created a&nbsp;vision for&nbsp;your areas of&nbsp;life.

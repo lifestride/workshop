@@ -6,7 +6,7 @@
 </script>
 
 <article class="prose">
-    <h1>Congrats! You Did It!</h1>
+    <h1>Congrats! You Did&nbsp;It!</h1>
 
     <p>
         You’ve just taken a huge step toward designing your best life!

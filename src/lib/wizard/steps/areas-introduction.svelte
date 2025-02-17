@@ -6,7 +6,7 @@
 </script>
 
 <article class="prose">
-    <h1>Areas of Life</h1>
+    <h1>Areas of&nbsp;Life</h1>
     <section>
         <p>Think about the different roles you play in your life. Reflect on the following questions:</p>
         <ul>

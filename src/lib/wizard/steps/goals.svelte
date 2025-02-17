@@ -24,7 +24,7 @@
 </script>
 
 <article class="prose">
-    <h1>Set Your Goals and Milestones</h1>
+    <h1>Set Your Goals and&nbsp;Milestones</h1>
     {#each $selectedAreas as areaUid}
         {@const area = groupedAreas.get(areaUid)!}
         <section class="two-cols">
