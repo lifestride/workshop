@@ -52,7 +52,7 @@ button {
 }
 
 button.big {
-    @apply block w-md mx-auto my-4 p-2;
+    @apply block w-full md:w-md mx-auto my-4 p-2;
 }
 
 button.next::after {

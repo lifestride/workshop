@@ -9,6 +9,8 @@
 </script>
 
 <article class="prose">
+    <h1>Welcome</h1>
+
     <section>
         <p>Hi everyone.</p>
         <p>We are so excited you are taking the time to review this with us.</p>
@@ -20,8 +22,11 @@
         <p>Are the questions helpful? Do you find it easy to create an area of focus for your life?</p>
         <p>During your goal-setting process, is there anything else we should include that we may have overlooked?</p>
 
-        <div class="flex items-center justify-center w-3/5 h-80 mx-auto my-10 border-2 border-neutral-300 rounded-lg text-center">
-            <p>A video from Gary with introduction and guidance.<br />(use <a href="https://loom.com/">Loom</a> to record)</p>
+        <div class="flex items-center justify-center w-full md:w-3/5 h-80 mx-auto my-10 border-2 border-neutral-300 rounded-lg text-center">
+            <p>
+                A&nbsp;video from&nbsp;Gary with&nbsp;introduction and&nbsp;guidance.<br />
+                (use <a href="https://loom.com/">Loom</a> to&nbsp;record)
+            </p>
         </div>
     </section>
 
@@ -50,13 +55,13 @@
     </section>
 
     <section>
-        <p class="w-1/2 mx-auto text-center">{@html intro()}</p>
+        <p class="w-full md:w-1/2 mx-auto text-center">{@html intro()}</p>
 
         <input
             type="text"
             bind:value={$user.firstName}
             placeholder="Enter your first name…"
-            class="block w-1/3 mx-auto p-2 border-2 border-neutral-300 rounded-lg text-3xl text-center"
+            class="block w-full md:w-1/3 mx-auto p-2 border-2 border-neutral-300 rounded-lg text-3xl text-center"
         />
     </section>
 </article>
