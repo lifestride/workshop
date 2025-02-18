@@ -2,6 +2,7 @@
     import RichTextEditor            from "$lib/components/RichTextEditor.svelte";
     import { createAreaGoalUpdater } from "$lib/createAreaGoalUpdater";
     import { areas }                 from "$lib/data/areas";
+    import decoration                from "$lib/data/decoration.json";
     import type Area                 from "$lib/model/Area";
     import type AreaGoals            from "$lib/model/AreaGoals";
     import { persistentStore }       from "$lib/persistentStore";
@@ -42,19 +43,20 @@
 
     {#each $selectedAreas as areaUid}
         {@const area = groupedAreas.get(areaUid)!}
+        {@const accentColor = decoration[area.uid].accentColor}
         <section class="two-cols">
-            <header class="card wide">{area.name}</header>
+            <header class="card wide" style="background-color: {accentColor};">{area.name}</header>
 
-            <div class="card bg-neutral-100">
-                <h4 class="mt-0">Questions</h4>
+            <div class="card">
+                <h4>Questions</h4>
                 <ul>
                     {#each area.prompt_questions as question}
                         <li>{question}</li>
                     {/each}
                 </ul>
             </div>
-            <div class="card bg-neutral-100">
-                <h4 class="mt-0">Examples</h4>
+            <div class="card">
+                <h4>Examples</h4>
                 <ul>
                     {#each area.sample_statements as statement}
                         <li>{statement}</li>

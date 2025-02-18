@@ -1,4 +1,10 @@
 <script lang="ts">
+    import { areas }  from "$lib/data/areas";
+    import decoration from "$lib/data/decoration.json";
+
+    const uid = "health-fitness";
+    const area = areas.find(area => area.uid === uid)!;
+    const accentColor = decoration[uid].accentColor;
 </script>
 
 <article class="prose">
@@ -17,9 +23,9 @@
     </section>
 
     <section class="two-cols">
-        <header class="card wide">Health and Fitness</header>
+        <header class="card wide" style="background-color: {accentColor};">{area.name}</header>
 
-        <div class="card wide bg-amber-100">
+        <div class="card wide">
             <h4>Gauge for Success</h4>
             <ul>
                 <li>Score 0: Poorly eating, no muscle tone, low energy.</li>
@@ -31,7 +37,7 @@
             </ul>
         </div>
 
-        <div class="card wide bg-blue-100">
+        <div class="card wide">
             <h4>Big 3 Annual Goals</h4>
             <ul>
                 <li>Maintain a healthy weight and visible muscle tone throughout the year. 15% BF Dexa Scans.</li>
@@ -40,7 +46,7 @@
             </ul>
         </div>
 
-        <div class="card bg-red-100">
+        <div class="card">
             <h4>Q1 Key Milestones</h4>
             <ul>
                 <li>Baseline Dexa scans and Initial doctor visits, Progress photos</li>
@@ -49,7 +55,7 @@
             </ul>
         </div>
 
-        <div class="card bg-green-100">
+        <div class="card">
             <h4>Q2 Key Milestones</h4>
             <ul>
                 <li>Try out HIIT Cardio. Dexa Scan - 2%.</li>
@@ -58,7 +64,7 @@
             </ul>
         </div>
 
-        <div class="card bg-yellow-100">
+        <div class="card">
             <h4>Q3 Key Milestones</h4>
             <ul>
                 <li>Integrate yoga/Pilates to improve core strength and flexibility.</li>
@@ -67,7 +73,7 @@
             </ul>
         </div>
 
-        <div class="card bg-purple-100">
+        <div class="card">
             <h4>Q4 Key milestones</h4>
             <ul>
                 <li>Final Race. Plan for recovery/maintenance program</li>

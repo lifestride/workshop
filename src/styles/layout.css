@@ -66,9 +66,13 @@ button.back::before {
 }
 
 .card {
-    @apply p-4 rounded-lg;
+    @apply p-4 rounded-lg not-print:bg-neutral-100;
 }
 
 .card > h4 {
-    @apply mb-3 text-center;
+    @apply my-0 text-center;
+}
+
+.card > h4 + .wysiwyg {
+    @apply mt-3;
 }

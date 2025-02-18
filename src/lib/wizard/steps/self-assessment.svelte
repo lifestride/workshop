@@ -14,7 +14,7 @@
     const getCurrentValue = (area: Area) => {
         const value = $derived($goals.find(predicate(area.uid))?.assessment ?? 0);
         return value;
-    }
+    };
 
     const getAssignmentValue = (area: Area) => {
         const value = getCurrentValue(area);
@@ -59,8 +59,8 @@
     <section class="two-cols">
         {#each $selectedAreas as areaUid}
             {@const area = groupedAreas.get(areaUid)!}
-            <section class="card bg-neutral-100">
-                <h4 class="mt-0">{area.name}</h4>
+            <section class="card">
+                <h4>{area.name}</h4>
 
                 <ul class="mb-5">
                     {#each area.assessment as question}
