@@ -1,0 +1,38 @@
+{
+    "health-fitness": {
+        "accentColor": "aliceblue"
+    },
+    "emotional-well-being": {
+        "accentColor": "beige"
+    },
+    "purpose-spirituality": {
+        "accentColor": "cornsilk"
+    },
+    "relationships-social-connection": {
+        "accentColor": "burlywood"
+    },
+    "family-parenting": {
+        "accentColor": "lavender"
+    },
+    "personal-growth-education": {
+        "accentColor": "linen"
+    },
+    "fun-recreation": {
+        "accentColor": "honeydew"
+    },
+    "physical-environment": {
+        "accentColor": "oldlace"
+    },
+    "community-contribution": {
+        "accentColor": "seashell"
+    },
+    "career-work": {
+        "accentColor": "lemonchiffon"
+    },
+    "entrepreneurship-business": {
+        "accentColor": "peachpuff"
+    },
+    "finances": {
+        "accentColor": "mistyrose"
+    }
+}
