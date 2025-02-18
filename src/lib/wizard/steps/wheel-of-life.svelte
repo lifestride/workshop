@@ -3,6 +3,7 @@
     import type Area              from "$lib/model/Area";
     import ApexCharts             from "apexcharts";
     import { onDestroy, onMount } from "svelte";
+    import decoration from "$lib/data/decoration.json";
 
     let chartContainerElement: HTMLElement;
     let chart: ApexCharts;
@@ -10,6 +11,7 @@
     const labels = areas.map((area: Area) => area.name);
     const portion = Number((100 / labels.length).toFixed(1));
     const series = Array(labels.length).fill(portion);
+    const colors = Object.values(decoration).map(area => area.accentColor);
 
     const chartOptions = {
         chart: {
@@ -24,6 +26,10 @@
             pie: {
                 expandOnClick: false,
             },
+        },
+        fill: {
+            type: "gradient",
+            // colors: colors,
         },
         responsive: [
             {
