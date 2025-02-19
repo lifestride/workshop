@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { areas }           from "$lib/data/areas";
+    import { page }            from "$app/state";
     import type Area           from "$lib/model/Area";
     import type AreaGoals      from "$lib/model/AreaGoals";
     import type User           from "$lib/model/User";
@@ -7,6 +7,7 @@
     import { onMount }         from "svelte";
     import "./print.css";
 
+    const areas = page.data.areas as Area[];
     const groupedAreas = new Map<string, Area>(areas.map(area => [area.uid, area]));
 
     const user = persistentStore<User>("user", { firstName: "" });

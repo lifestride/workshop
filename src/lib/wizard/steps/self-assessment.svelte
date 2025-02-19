@@ -1,11 +1,11 @@
 <script lang="ts">
-    import { areas }           from "$lib/data/areas";
+    import { page }            from "$app/state";
     import type Area           from "$lib/model/Area";
     import type AreaGoals      from "$lib/model/AreaGoals";
     import { persistentStore } from "$lib/persistentStore";
 
+    const areas = page.data.areas as Area[];
     const groupedAreas = new Map<string, Area>(areas.map(area => [area.uid, area]));
-
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
     const goals = persistentStore<Array<AreaGoals>>("goals", []);
 

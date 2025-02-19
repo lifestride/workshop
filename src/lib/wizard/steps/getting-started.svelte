@@ -1,11 +1,14 @@
 <script lang="ts">
-    import intros              from "$lib/data/intros.json";
+    import { page }            from "$app/state";
     import type User           from "$lib/model/User";
     import { persistentStore } from "$lib/persistentStore";
 
     const user = persistentStore<User>("user", { firstName: "" });
 
-    const intro = () => intros.at(Math.floor(Math.random() * intros.length));
+    const intro = () => {
+        const intros = page.data.intros;
+        intros.at(Math.floor(Math.random() * intros.length));
+    };
 </script>
 
 <article class="prose">

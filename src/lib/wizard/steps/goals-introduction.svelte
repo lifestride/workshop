@@ -1,10 +1,12 @@
 <script lang="ts">
-    import { areas }  from "$lib/data/areas";
-    import decoration from "$lib/data/decoration.json";
+    import { page }   from "$app/state";
+    import type Area  from "$lib/model/Area";
+
+    const areas = page.data.areas as Area[];
 
     const uid = "health-fitness";
     const area = areas.find(area => area.uid === uid)!;
-    const accentColor = decoration[uid].accentColor;
+    const accentColor = page.data.decoration[uid].accentColor;
 </script>
 
 <article class="prose">

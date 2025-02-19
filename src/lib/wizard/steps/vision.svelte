@@ -1,14 +1,13 @@
 <script lang="ts">
+    import { page }                  from "$app/state";
     import RichTextEditor            from "$lib/components/RichTextEditor.svelte";
     import { createAreaGoalUpdater } from "$lib/createAreaGoalUpdater";
-    import { areas }                 from "$lib/data/areas";
-    import decoration                from "$lib/data/decoration.json";
     import type Area                 from "$lib/model/Area";
     import type AreaGoals            from "$lib/model/AreaGoals";
     import { persistentStore }       from "$lib/persistentStore";
 
+    const areas = page.data.areas as Area[];
     const groupedAreas = new Map<string, Area>(areas.map(area => [area.uid, area]));
-
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
     const goals = persistentStore<Array<AreaGoals>>("goals", []);
 
@@ -43,7 +42,7 @@
 
     {#each $selectedAreas as areaUid}
         {@const area = groupedAreas.get(areaUid)!}
-        {@const accentColor = decoration[area.uid].accentColor}
+        {@const accentColor = page.data.decoration[area.uid].accentColor}
         <section class="two-cols">
             <header class="card wide" style="background-color: {accentColor};">{area.name}</header>
 

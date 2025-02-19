@@ -1,17 +1,18 @@
 <script lang="ts">
-    import { areas }              from "$lib/data/areas";
+    import { page }               from "$app/state";
     import type Area              from "$lib/model/Area";
     import ApexCharts             from "apexcharts";
     import { onDestroy, onMount } from "svelte";
-    import decoration from "$lib/data/decoration.json";
 
-    let chartContainerElement: HTMLElement;
-    let chart: ApexCharts;
+    const areas = page.data.areas as Area[];
 
     const labels = areas.map((area: Area) => area.name);
     const portion = Number((100 / labels.length).toFixed(1));
     const series = Array(labels.length).fill(portion);
-    const colors = Object.values(decoration).map(area => area.accentColor);
+    const colors = Object.values(page.data.decoration).map(area => area.accentColor);
+
+    let chartContainerElement: HTMLElement;
+    let chart: ApexCharts;
 
     const chartOptions = {
         chart: {
