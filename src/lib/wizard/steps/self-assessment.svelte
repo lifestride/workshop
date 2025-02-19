@@ -5,7 +5,8 @@
     import { persistentStore } from "$lib/persistentStore";
 
     const areas = page.data.areas as Area[];
-    const groupedAreas = new Map<string, Area>(areas.map(area => [area.uid, area]));
+    const indexedAreas = page.data.indexedAreas as Map<string, Area>;
+
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
     const goals = persistentStore<Array<AreaGoals>>("goals", []);
 
@@ -58,7 +59,7 @@
     </section>
     <section class="two-cols">
         {#each $selectedAreas as areaUid}
-            {@const area = groupedAreas.get(areaUid)!}
+            {@const area = indexedAreas.get(areaUid)!}
             <section class="card">
                 <h4>{area.name}</h4>
 

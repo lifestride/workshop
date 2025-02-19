@@ -8,7 +8,7 @@
     import "./print.css";
 
     const areas = page.data.areas as Area[];
-    const groupedAreas = new Map<string, Area>(areas.map(area => [area.uid, area]));
+    const indexedAreas = page.data.indexedAreas as Map<string, Area>;
 
     const user = persistentStore<User>("user", { firstName: "" });
     const reflection = persistentStore<string>("reflection", "");
@@ -31,7 +31,7 @@
 
     {#each $goals as goal}
         {#if $selectedAreas.includes(goal.areaUid)}
-            {@const area = groupedAreas.get(goal.areaUid)!}
+            {@const area = indexedAreas.get(goal.areaUid)!}
             <section class="area two-cols">
                 <header class="wide">
                     <h2 class="not-prose">{area.name}</h2>
