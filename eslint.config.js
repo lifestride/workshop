@@ -1,5 +1,6 @@
 import prettier from "eslint-config-prettier";
 import js from "@eslint/js";
+import css from "@eslint/css";
 import { includeIgnoreFile } from "@eslint/compat";
 import svelte from "eslint-plugin-svelte";
 import globals from "globals";
@@ -30,5 +31,16 @@ export default ts.config(
                 parser: ts.parser
             }
         }
+    },
+    {
+        files: ["**/*.css"],
+        plugins: {
+            css,
+        },
+        language: "css/css",
+        languageOptions: {
+            customSyntax: tailwindSyntax,
+        },
+        ...css.configs.recommended,
     },
 );

@@ -12,7 +12,7 @@
         "format": "prettier --write .",
         "lint": "prettier --check . && eslint .",
         "test:e2e": "playwright test",
-        "test": "npm run test:e2e",
+        "test": "pnpm run test:e2e",
         "deploy": "pnpm run build && pnpx gh-pages -d build -t"
     },
     "devDependencies": {
@@ -61,5 +61,10 @@
         "@tiptap/starter-kit": "^2.11.5",
         "apexcharts": "^4.5.0",
         "localforage": "^1.10.0"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "esbuild"
+        ]
     }
 }
