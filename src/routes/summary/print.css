@@ -9,7 +9,7 @@ body {
     @apply m-0 bg-white;
 }
 
-article section.area:not(:first-of-type) {
+article section.area {
     @apply break-before-page;
 }
 
