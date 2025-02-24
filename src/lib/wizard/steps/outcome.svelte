@@ -2,6 +2,7 @@
     import { goto } from "$app/navigation";
 
     const summary = () => goto("./summary");
+    const masterplan = () => goto("./masterplan");
     const feedback = () => goto("./feedback");
 </script>
 
@@ -24,5 +25,6 @@
     <p>Thank you for being part of this journey — your feedback is invaluable!</p>
 
     <button type="button" class="big" onclick={summary}>View and Print Summary</button>
+    <button type="button" class="big" onclick={masterplan}>View and Print Master Plan</button>
     <button type="button" class="big" onclick={feedback}>Complete Feedback Survey</button>
 </article>
