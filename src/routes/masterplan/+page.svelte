@@ -1,6 +1,7 @@
 <script lang="ts">
     import type AreaGoals      from "$lib/model/AreaGoals";
     import { persistentStore } from "$lib/persistentStore";
+    import delayedPrint        from "$lib/utils/print";
     import { onMount }         from "svelte";
     import "../summary/print.css";
 
@@ -10,9 +11,7 @@
     const empty = "empty :-(";
 
     onMount(() => {
-        setTimeout(() => {
-            window.print();
-        }, 1000);
+        delayedPrint();
     });
 </script>
 

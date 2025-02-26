@@ -4,13 +4,14 @@
     import type AreaGoals      from "$lib/model/AreaGoals";
     import type User           from "$lib/model/User";
     import { persistentStore } from "$lib/persistentStore";
+    import delayedPrint        from "$lib/utils/print";
     import { onMount }         from "svelte";
     import "./print.css";
 
     const areas = page.data.areas as Area[];
     const indexedAreas = page.data.indexedAreas as Map<string, Area>;
 
-    const user = persistentStore<User>("user", { firstName: "" });
+    const user = persistentStore<User>("user", {firstName: ""});
     const reflection = persistentStore<string>("reflection", "");
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
     const goals = persistentStore<Array<AreaGoals>>("goals", []);
@@ -18,9 +19,7 @@
     const empty = "empty :-(";
 
     onMount(() => {
-        setTimeout(() => {
-            window.print();
-        }, 1000);
+        delayedPrint();
     });
 </script>
 
