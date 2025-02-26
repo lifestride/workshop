@@ -63,7 +63,9 @@
         <input
             type="text"
             bind:value={$user.firstName}
+            maxlength="16"
             placeholder="Enter your first name…"
+            data-test-id="name"
             class="block w-full md:w-1/3 mx-auto p-2 border-2 border-neutral-300 rounded-lg text-3xl text-center"
         />
     </section>

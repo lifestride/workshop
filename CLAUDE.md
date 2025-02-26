@@ -9,7 +9,7 @@
 - `pnpm run lint` - Check code with ESLint & Prettier
 - `pnpm run test:e2e` - Run end-to-end tests with Playwright
 - `pnpm run test:e2e -- --project=chromium` - Test in Chrome only
-- `pnpm run test:e2e -- e2e/demo.test.ts` - Run specific test file
+- `pnpm run test:e2e -- e2e/wizard.test.ts` - Run specific test file
 
 ## Code Style Guidelines
 - **TypeScript**: Strict mode enabled; prefer explicit types for function params and returns
