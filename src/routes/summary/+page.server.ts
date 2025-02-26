@@ -1,11 +1,5 @@
-import { areas } from "$lib/data/areas";
-import type Area from "$lib/model/Area";
-
-const indexedAreas = new Map<string, Area>(areas.map(area => [area.uid, area]));
+import { loadAreaData } from "$lib/dataload";
 
 export function load({ params }) {
-    return {
-        areas,
-        indexedAreas,
-    };
+    return loadAreaData();
 }
