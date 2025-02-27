@@ -1,11 +1,11 @@
 <script lang="ts">
-    import { page }            from "$app/state";
+    import type { WizardData } from "$lib/dataload";
     import type Area           from "$lib/model/Area";
     import type AreaGoals      from "$lib/model/AreaGoals";
     import { persistentStore } from "$lib/persistentStore";
 
-    const areas = page.data.areas as Area[];
-    const indexedAreas = page.data.indexedAreas as Map<string, Area>;
+    let {data}: { data: WizardData } = $props();
+    const {indexedAreas} = data;
 
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
     const goals = persistentStore<Array<AreaGoals>>("goals", []);
@@ -28,7 +28,7 @@
             const index = data.findIndex(predicate(area.uid));
 
             if (index === -1) {
-                data.push({ areaUid: area.uid, assessment: value });
+                data.push({areaUid: area.uid, assessment: value});
             }
             else {
                 data[index].assessment = value;

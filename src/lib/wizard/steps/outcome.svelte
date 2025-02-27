@@ -1,5 +1,8 @@
 <script lang="ts">
-    import { goto } from "$app/navigation";
+    import { goto }            from "$app/navigation";
+    import type { WizardData } from "$lib/dataload";
+
+    let {data}: { data: WizardData } = $props();
 
     const summary = () => goto("./summary");
     const masterplan = () => goto("./masterplan");

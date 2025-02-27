@@ -1,19 +1,19 @@
 <script lang="ts">
-    import { page }                  from "$app/state";
     import RichTextEditor            from "$lib/components/RichTextEditor.svelte";
     import { createAreaGoalUpdater } from "$lib/createAreaGoalUpdater";
+    import type { WizardData }       from "$lib/dataload";
     import type Area                 from "$lib/model/Area";
     import type AreaGoals            from "$lib/model/AreaGoals";
     import { persistentStore }       from "$lib/persistentStore";
 
-    const areas = page.data.areas as Area[];
-    const indexedAreas = page.data.indexedAreas as Map<string, Area>;
+    let {data}: { data: WizardData } = $props();
+    const {areas, indexedAreas, decoration} = data;
 
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
     const goals = persistentStore<Array<AreaGoals>>("goals", []);
 
     const groupedGoals = areas.reduce<{ [key: string]: AreaGoals }>((accumulator, area: Area) => {
-        accumulator[area.uid] = { areaUid: area.uid };
+        accumulator[area.uid] = {areaUid: area.uid};
         return accumulator;
     }, {});
 
@@ -28,7 +28,7 @@
     <h1>Set Your Goals and&nbsp;Milestones</h1>
     {#each $selectedAreas as areaUid}
         {@const area = indexedAreas.get(areaUid)!}
-        {@const accentColor = page.data.decoration[area.uid].accentColor}
+        {@const accentColor = decoration[area.uid].accentColor}
         <section class="two-cols">
             <header class="card wide" style="background-color: {accentColor};">{area.name}</header>
 

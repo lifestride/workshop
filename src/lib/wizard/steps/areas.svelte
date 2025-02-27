@@ -1,9 +1,10 @@
 <script lang="ts">
-    import { page }            from "$app/state";
-    import type Area           from "$lib/model/Area";
+    import type { WizardData } from "$lib/dataload";
     import { persistentStore } from "$lib/persistentStore";
 
-    const areas = page.data.areas as Area[];
+    let {data}: { data: WizardData } = $props();
+    const { areas, decoration } = data;
+
     const selectedAreas = persistentStore<string[]>("selected-areas", []);
 </script>
 
@@ -17,7 +18,7 @@
     </section>
     <section class="two-cols">
         {#each areas as area, i}
-            {@const accentColor = page.data.decoration[area.uid].accentColor}
+            {@const accentColor = decoration[area.uid].accentColor}
             <section class="card" style="background-color: {accentColor};">
                 <input type="checkbox" name="selected-areas" bind:group={$selectedAreas} value="{area.uid}" id="area-{i}" />
                 <label for="area-{i}" class="font-bold">{area.name}</label>

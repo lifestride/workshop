@@ -1,6 +1,9 @@
 <script lang="ts">
     import RichTextEditor      from "$lib/components/RichTextEditor.svelte";
+    import type { WizardData } from "$lib/dataload";
     import { persistentStore } from "$lib/persistentStore";
+
+    let {data}: { data: WizardData } = $props();
 
     const content = persistentStore<string>("areas-of-life", "");
 </script>
@@ -21,6 +24,6 @@
     <section>
         <h3>Activity</h3>
         <p>Reflect on what you are spending most of your time right now.</p>
-        <RichTextEditor bind:content="{$content}" />
+        <RichTextEditor bind:content={$content} />
     </section>
 </article>

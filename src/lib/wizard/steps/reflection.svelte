@@ -1,6 +1,9 @@
 <script lang="ts">
     import RichTextEditor      from "$lib/components/RichTextEditor.svelte";
+    import type { WizardData } from "$lib/dataload";
     import { persistentStore } from "$lib/persistentStore";
+
+    let {data}: { data: WizardData } = $props();
 
     const content = persistentStore<string>("reflection", "");
 </script>
@@ -19,6 +22,6 @@
     <section>
         <h3>Activity</h3>
         <p>Reflect on&nbsp;your previous year and&nbsp;note some noteworthy events.</p>
-        <RichTextEditor bind:content="{$content}" />
+        <RichTextEditor bind:content={$content} />
     </section>
 </article>

@@ -1,5 +1,6 @@
-import { loadExtendedAreaData } from "$lib/dataload";
+import { loadWizardData }      from "$lib/dataload";
+import type { PageServerLoad } from "./$types";
 
-export function load({ params }) {
-    return loadExtendedAreaData();
-}
+export const load: PageServerLoad = async ({params}) => {
+    return loadWizardData();
+};

@@ -1,5 +1,6 @@
-import { loadAreaData } from "$lib/dataload";
+import { loadPrintData }       from "$lib/dataload";
+import type { PageServerLoad } from "./$types";
 
-export function load({ params }) {
-    return loadAreaData();
-}
+export const load: PageServerLoad = async ({params}) => {
+    return loadPrintData();
+};

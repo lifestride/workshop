@@ -1,13 +1,15 @@
 <script lang="ts">
-    import { page }            from "$app/state";
+    import type { WizardData } from "$lib/dataload";
     import type User           from "$lib/model/User";
     import { persistentStore } from "$lib/persistentStore";
 
-    const user = persistentStore<User>("user", { firstName: "" });
+    let {data}: { data: WizardData } = $props();
+
+    const user = persistentStore<User>("user", {firstName: ""});
 
     const intro = () => {
-        const intros = page.data.intros;
-        intros.at(Math.floor(Math.random() * intros.length));
+        const rndIdx = Math.floor(Math.random() * data.intros.length);
+        return data.intros.at(rndIdx);
     };
 </script>
 

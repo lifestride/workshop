@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { page }   from "$app/state";
-    import type Area  from "$lib/model/Area";
+    import type { WizardData } from "$lib/dataload";
 
-    const areas = page.data.areas as Area[];
+    let {data}: { data: WizardData } = $props();
+    const {areas, decoration} = data;
 
     const uid = "health-fitness";
     const area = areas.find(area => area.uid === uid)!;
-    const accentColor = page.data.decoration[uid].accentColor;
+    const accentColor = decoration[uid].accentColor;
 </script>
 
 <article class="prose">
