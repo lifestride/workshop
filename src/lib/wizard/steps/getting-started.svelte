@@ -27,12 +27,15 @@
         <p>Are the questions helpful? Do you find it easy to create an area of focus for your life?</p>
         <p>During your goal-setting process, is there anything else we should include that we may have overlooked?</p>
 
-        <div class="flex items-center justify-center w-full md:w-3/5 h-80 mx-auto my-10 border-2 border-neutral-300 rounded-lg text-center">
-            <p>
-                A&nbsp;video from&nbsp;Gary with&nbsp;introduction and&nbsp;guidance.<br />
-                (use <a href="https://loom.com/">Loom</a> to&nbsp;record)
-            </p>
-        </div>
+        <iframe
+            src="https://www.loom.com/embed/c5a9b7f2056e4bed85b72beba4c619d1?sid=8c0915b5-d6e5-4e3e-bd5c-b5e8306fb82b"
+            title="Introduction"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            class="w-full aspect-video mx-auto my-10 border-2 border-neutral-300 rounded-lg"
+        ></iframe>
     </section>
 
     <section>
