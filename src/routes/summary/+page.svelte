@@ -74,13 +74,13 @@
                 </section>
 
                 <section>
-                    <h3 class="not-prose">Q2 Milestones</h3>
-                    {@html goal.q2 ?? empty}
+                    <h3 class="not-prose">Q3 Milestones</h3>
+                    {@html goal.q3 ?? empty}
                 </section>
 
                 <section>
-                    <h3 class="not-prose">Q2 Milestones</h3>
-                    {@html goal.q2 ?? empty}
+                    <h3 class="not-prose">Q4 Milestones</h3>
+                    {@html goal.q4 ?? empty}
                 </section>
             </section>
         {/if}
